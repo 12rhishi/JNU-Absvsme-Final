@@ -1,0 +1,1245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Images/JNU_LOGO.jpg" type="image/x-icon">
+    <title>Archive-News & Events | ABVSME </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+    <div id="top-bar"
+        class="bg-gray-900 text-gray-300 text-xs py-2 hidden md:block transition-all duration-300 ease-in-out">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <div class="flex space-x-3">
+                <a href="https://www.jnu.ac.in/main/"
+                    class="hover:text-white hover:underline transition duration-200">JNU</a>
+                <span class="text-gray-600">|</span>
+                <a href="https://www.jnu.ac.in/Right-to-Information"
+                    class="hover:text-white hover:underline transition duration-200">RTI</a>
+                <span class="text-gray-600">|</span>
+                <a href="https://www.jnu.ac.in/sites/default/files/JNUTelDirectory.pdf"
+                    class="hover:text-white hover:underline transition duration-200">Directory</a>
+                <span class="text-gray-600">|</span>
+                <a href="https://www.jnu.ac.in/contactus"
+                    class="hover:text-white hover:underline transition duration-200">Contact us</a>
+                <span class="text-gray-600">|</span>
+                <a href="https://www.jnu.ac.in/emergency"
+                    class="hover:text-white hover:underline transition duration-200">Emergency Services</a>
+                <span class="text-gray-600">|</span>
+                <a href="https://www.jnu.ac.in/sites/default/files/Holidays2025.pdf"
+                    class="hover:text-white hover:underline transition duration-200">List of Holidays</a>
+            </div>
+
+            <form action="https://www.jnu.ac.in/search/node" method="get" class="flex items-center">
+                <input type="text" name="keys" placeholder="Search"
+                    class="px-2 py-1 text-gray-900 rounded-l-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm">
+                <button type="submit"
+                    class="bg-blue-600 text-white px-3 py-1 rounded-r-md hover:bg-blue-700 transition duration-200">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                    </svg>
+                </button>
+            </form>
+
+            <div class="flex items-center space-x-4">
+                <div class="flex space-x-2">
+                    <a href="https://www.jnu.ac.in/emergency#block-bannerbelowheader"
+                        class="hover:text-white hover:underline transition duration-200">Skip to main content</a>
+                    <span class="text-gray-600">|</span>
+                    <a href="https://www.jnu.ac.in/content/accessibility-statement"
+                        class="hover:text-white hover:underline transition duration-200">Accessibility Statement</a>
+                    <span class="text-gray-600">|</span>
+                    <a href="https://www.jnu.ac.in/content/screen-reader"
+                        class="hover:text-white hover:underline transition duration-200">Screen Reader</a>
+                </div>
+                <div class="flex items-center space-x-1">
+                    <button
+                        class="text-gray-300 hover:text-white text-xs font-bold px-1 py-0.5 rounded-sm hover:bg-gray-700 transition duration-200"
+                        onclick="changeFontSize(-1)">A-</button>
+                    <button
+                        class="text-gray-300 hover:text-white text-sm font-bold px-1 py-0.5 rounded-sm hover:bg-gray-700 transition duration-200"
+                        onclick="changeFontSize(0)">A</button>
+                    <button
+                        class="text-gray-300 hover:text-white text-base font-bold px-1 py-0.5 rounded-sm hover:bg-gray-700 transition duration-200"
+                        onclick="changeFontSize(1)">A+</button>
+                </div>
+                <div class="flex space-x-1">
+                    <button
+                        class="w-4 h-4 rounded-full bg-red-500 border border-gray-600 hover:border-white transition duration-200"
+                        onclick="changeContrast('red')"></button>
+                    <button
+                        class="w-4 h-4 rounded-full bg-green-500 border border-gray-600 hover:border-white transition duration-200"
+                        onclick="changeContrast('green')"></button>
+                    <button
+                        class="w-4 h-4 rounded-full bg-blue-500 border border-gray-600 hover:border-white transition duration-200"
+                        onclick="changeContrast('blue')"></button>
+                </div>
+                <span class="text-gray-600">|</span>
+                <a href="https://www.jnu.ac.in/hi"
+                    class="hover:text-white hover:underline transition duration-200">हिंदी</a>
+                <span class="text-gray-600">|</span>
+                <a href="https://www.jnu.ac.in/main/"
+                    class="hover:text-white hover:underline transition duration-200">English</a>
+            </div>
+        </div>
+    </div>
+
+    <header class="bg-white shadow-md py-4 md:sticky md:top-0 z-50">
+        <nav class="container mx-auto flex justify-between items-center px-4">
+            <a href="index.html"
+                class="flex items-center space-x-3 rounded-md p-2 hover:bg-blue-50 transition duration-300">
+                <img src="Images/JNU_LOGO.jpg" alt="JNU Logo" class="h-20 w-auto">
+                <div class="text-left">
+                    <p class="text-lg font-semibold text-blue-800 leading-tight">Atal Bihari Vajpayee School of
+                        Management and Entrepreneurship</p>
+                    <p class="text-sm text-gray-600 leading-tight">Jawaharlal Nehru University</p>
+                    <p class="text-sm text-gray-600 leading-tight">New Delhi, India</p>
+                </div>
+            </a>
+            <div class="hidden md:flex space-x-6">
+                <div class="relative group">
+                    <button
+                        class="text-gray-700 hover:text-blue-600 font-medium rounded-md p-2 hover:bg-gray-100 transition duration-300 dropdown-toggle">
+                        ABVSME
+                        <svg class="inline-block w-4 h-4 ml-1 -mt-1 transform group-hover:rotate-180 transition-transform duration-200"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <div
+                        class="dropdown-menu absolute hidden group-hover:block bg-white shadow-lg rounded-md py-2 w-48 z-50">
+                        <a href="about.html"
+                            class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">About Us</a>
+                        <div class="relative group">
+                            <button
+                                class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600 focus:outline-none nested-dropdown-toggle">
+                                <svg class="inline-block w-4 h-4 mr-1 -mt-1" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 19l-7-7 7-7"></path>
+                                </svg>
+                                Admission
+                            </button>
+                            <div class="nested-dropdown-menu">
+                                <a href="Mba-admission.html"
+                                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">MBA
+                                </a>
+                                <a href="Phd-admission.html"
+                                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">PhD
+                                </a>
+                            </div>
+                        </div>
+                        <a href="fee-structure.html"
+                            class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Fee
+                            Structure</a>
+                        <a href="pedagogy.html"
+                            class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Pedagogy</a>
+                    </div>
+                </div>
+
+                <div class="relative group">
+                    <button
+                        class="text-gray-700 hover:text-blue-600 font-medium rounded-md p-2 hover:bg-gray-100 transition duration-300 dropdown-toggle">
+                        Programs
+                        <svg class="inline-block w-4 h-4 ml-1 -mt-1 transform group-hover:rotate-180 transition-transform duration-200"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <div
+                        class="dropdown-menu absolute hidden group-hover:block bg-white shadow-lg rounded-md py-2 w-40 z-50">
+                        <a href="mba-courses.html"
+                            class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">MBA</a>
+                        <a href="Diploma.html"
+                            class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">DIPLOMA</a>
+                        <a href="Phd.html"
+                            class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">PhD</a>
+                    </div>
+                </div>
+
+                <div class="relative group">
+                    <button
+                        class="text-gray-700 hover:text-blue-600 font-medium rounded-md p-2 hover:bg-gray-100 transition duration-300 dropdown-toggle">
+                        Faculty
+                        <svg class="inline-block w-4 h-4 ml-1 -mt-1 transform group-hover:rotate-180 transition-transform duration-200"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <div
+                        class="dropdown-menu absolute hidden group-hover:block bg-white shadow-lg rounded-md py-2 w-48 z-50">
+                        <a href="dean.html"
+                            class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Dean</a>
+                        <a href="https://www.jnu.ac.in/abvsme_faculty"
+                            class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Faculty</a>
+                        <a href="concurrent-faculty.html"
+                            class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Concurrent
+                            Faculty</a>
+                        <a href="Associated Faculty.html"
+                            class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Associated
+                            Faculty</a>
+                        <a href="visiting-faculty.html"
+                            class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Visiting
+                            Faculty</a>
+                    </div>
+                </div>
+
+                <div class="relative group">
+                    <button
+                        class="text-gray-700 hover:text-blue-600 font-medium rounded-md p-2 hover:bg-gray-100 transition duration-300 dropdown-toggle">
+                        People
+                        <svg class="inline-block w-4 h-4 ml-1 -mt-1 transform group-hover:rotate-180 transition-transform duration-200"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <div
+                        class="dropdown-menu absolute hidden group-hover:block bg-white shadow-lg rounded-md py-2 w-48 z-50">
+                        <a href="mba-students.html"
+                            class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">MBA Students</a>
+                        <a href="Phdstudents.html"
+                            class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">PhD Students</a>
+                        <a href="Officestaff.html"
+                            class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Office Staff</a>
+                    </div>
+                </div>
+
+                <a href="research.html"
+                    class="text-gray-700 font-medium rounded-md p-2 hover:bg-gray-100 hover:text-blue-600 transition duration-300">Research</a>
+                <a href="Placements.html"
+                    class="text-gray-700 font-medium rounded-md p-2 hover:bg-gray-100 hover:text-blue-600 transition duration-300">Placements</a>
+                <a href="News&Events.html"
+                    class="text-gray-700 font-medium rounded-md p-2 hover:bg-gray-100 hover:text-blue-600 transition duration-300">News
+                    & Events</a>
+
+                <div class="relative group">
+                    <button
+                        class="text-gray-700 hover:text-blue-600 font-medium rounded-md p-2 hover:bg-gray-100 transition duration-300 dropdown-toggle">
+                        Student
+                        <svg class="inline-block w-4 h-4 ml-1 -mt-1 transform group-hover:rotate-180 transition-transform duration-200"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <div
+                        class="dropdown-menu absolute hidden group-hover:block bg-white shadow-lg rounded-md py-2 w-40 z-50">
+                        <a href="Student-Achievements.html"
+                            class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Student
+                            Achievements</a>
+                        <a href="clubs.html"
+                            class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Student
+                            Clubs</a>
+                        <div class="relative group">
+                            <button
+                                class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600 focus:outline-none nested-dropdown-toggle">
+                                <svg class="inline-block w-4 h-4 mr-1 -mt-1" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 19l-7-7 7-7"></path>
+                                </svg>
+                                Library
+                            </button>
+                            <div class="nested-dropdown-menu">
+                                <a href="http://lib.jnu.ac.in/"
+                                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Library
+                                    Home Page</a>
+                                <a href="https://ezproxy.jnu.ac.in/login"
+                                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Remote
+                                    Access</a>
+                                <a href="http://jnucatalogue.jnu.ac.in:8000/"
+                                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Online
+                                    Catalogue (Internet)</a>
+                                <a href="http://jnuonlinecatlog.jnu.ac.in:8000/cgi-bin/gw/chameleon/"
+                                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Online
+                                    Catalogue (Intranet)</a>
+                                <a href="http://lib.jnu.ac.in/Onilne_Databases"
+                                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Online
+                                    Databases</a>
+                                <a href="http://lib.jnu.ac.in/online_journals"
+                                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">E-Journals</a>
+                                <a href="http://lib.jnu.ac.in/e-newspapers"
+                                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">E-Newspapers</a>
+                                <a href="http://lib.jnu.ac.in/e-books"
+                                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">E-Books</a>
+                                <a href="https://jnu.irins.org/"
+                                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">JNU
+                                    IRINS - Faculty Profile</a>
+                                <a href="https://shodhganga.inflibnet.ac.in/"
+                                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Shodhganga</a>
+                                <a href="https://shodh.inflibnet.ac.in/"
+                                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Shodhgangotri</a>
+                                <a href="http://lib.jnu.ac.in/Single_Window_Search"
+                                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Single
+                                    window search</a>
+                            </div>
+                        </div>
+                        <a href="https://www.jnu.ac.in/hostel"
+                            class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Hostel</a>
+                    </div>
+                </div>
+
+                <div class="relative group">
+                    <button
+                        class="text-gray-700 hover:text-blue-600 font-medium rounded-md p-2 hover:bg-gray-100 transition duration-300 dropdown-toggle">
+                        More
+                        <svg class="inline-block w-4 h-4 ml-1 -mt-1 transform group-hover:rotate-180 transition-transform duration-200"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <div
+                        class="dropdown-menu absolute hidden group-hover:block bg-white shadow-lg rounded-md py-2 w-40 z-50">
+                        <a href="Newsletter.html"
+                            class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Newsletter</a>
+                        <a href="gallery.html"
+                            class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Gallery</a>
+                    </div>
+                </div>
+
+                <a href="Contact_Us.html"
+                    class="text-gray-700 font-medium rounded-md p-2 hover:bg-gray-100 hover:text-blue-600 transition duration-300">Contact
+                    us</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg py-2 mt-2">
+            <div class="relative">
+                <button id="mobile-about-button"
+                    class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600 focus:outline-none">
+                    ABVSME
+                    <svg class="inline-block w-4 h-4 ml-1 -mt-1 transform transition-transform duration-200" fill="none"
+                        stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                <div id="mobile-about-menu" class="hidden bg-gray-50 py-2">
+                    <a href="about.html"
+                        class="block px-8 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">About Us</a>
+                    <div class="relative">
+                        <button id="mobile-admission-button"
+                            class="block w-full text-left px-8 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600 focus:outline-none">
+                            Admission
+                            <svg class="inline-block w-4 h-4 ml-1 -mt-1 transform transition-transform duration-200"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                                </path>
+                            </svg>
+                        </button>
+                        <div id="mobile-admission-menu" class="hidden bg-gray-100 py-2">
+                            <a href="Mba-admission.html"
+                                class="block px-12 py-2 text-gray-700 hover:bg-gray-200 hover:text-blue-600">MBA
+                            </a>
+                            <a href="Phd-admission.html"
+                                class="block px-12 py-2 text-gray-700 hover:bg-gray-200 hover:text-blue-600">PhD
+                            </a>
+                        </div>
+                    </div>
+                    <a href="fee-structure.html"
+                        class="block px-8 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Fee Structure</a>
+                    <a href="pedagogy.html"
+                        class="block px-8 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Pedagogy</a>
+                </div>
+            </div>
+
+            <div class="relative">
+                <button id="mobile-programs-button"
+                    class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600 focus:outline-none">
+                    Programs
+                    <svg class="inline-block w-4 h-4 ml-1 -mt-1 transform transition-transform duration-200" fill="none"
+                        stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                <div id="mobile-programs-menu" class="hidden bg-gray-50 py-2">
+                    <a href="mba-courses.html"
+                        class="block px-8 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">MBA</a>
+                    <a href="Diploma.html"
+                        class="block px-8 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">DIPLOMA</a>
+                    <a href="Phd.html"
+                        class="block px-8 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">PhD</a>
+                </div>
+            </div>
+
+            <div class="relative">
+                <button id="mobile-faculty-button"
+                    class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600 focus:outline-none">
+                    Faculty
+                    <svg class="inline-block w-4 h-4 ml-1 -mt-1 transform transition-transform duration-200" fill="none"
+                        stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                <div id="mobile-faculty-menu" class="hidden bg-gray-50 py-2">
+                    <a href="dean.html"
+                        class="block px-8 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Dean</a>
+                    <a href="https://www.jnu.ac.in/abvsme_faculty"
+                        class="block px-8 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Faculty</a>
+                    <a href="concurrent-faculty.html"
+                        class="block px-8 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Concurrent
+                        Faculty</a>
+                    <a href="Associated Faculty.html"
+                        class="block px-8 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Associated
+                        Faculty</a>
+                    <a href="visiting-faculty.html"
+                        class="block px-8 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Visiting Faculty</a>
+                </div>
+            </div>
+
+            <div class="relative">
+                <button id="mobile-people-button"
+                    class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600 focus:outline-none">
+                    People
+                    <svg class="inline-block w-4 h-4 ml-1 -mt-1 transform transition-transform duration-200" fill="none"
+                        stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                <div id="mobile-people-menu" class="hidden bg-gray-50 py-2">
+                    <a href="mba-students.html"
+                        class="block px-8 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">MBA Students</a>
+                    <a href="Phdstudents.html"
+                        class="block px-8 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">PhD Students</a>
+                    <a href="Officestaff.html"
+                        class="block px-8 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Office Staff</a>
+                </div>
+            </div>
+
+            <a href="research.html"
+                class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Research</a>
+            <a href="Placements.html"
+                class="block px-8 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Placements</a>
+            <a href="News&Events.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">News
+                & Events</a>
+
+            <div class="relative">
+                <button id="mobile-student-button"
+                    class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600 focus:outline-none">
+                    Student
+                    <svg class="inline-block w-4 h-4 ml-1 -mt-1 transform transition-transform duration-200" fill="none"
+                        stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                <div id="mobile-student-menu" class="hidden bg-gray-50 py-2">
+                    <a href="Student-Achievements.html"
+                        class="block px-8 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Student
+                        Achievements</a>
+                    <a href="clubs.html"
+                        class="block px-8 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Student Clubs</a>
+                    <div class="relative">
+                        <button id="mobile-library-button"
+                            class="block w-full text-left px-8 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600 focus:outline-none">
+                            Library
+                            <svg class="inline-block w-4 h-4 ml-1 -mt-1 transform transition-transform duration-200"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                                </path>
+                            </svg>
+                        </button>
+                        <div id="mobile-library-menu" class="hidden bg-gray-100 py-2">
+                            <a href="http://lib.jnu.ac.in/"
+                                class="block px-12 py-2 text-gray-700 hover:bg-gray-200 hover:text-blue-600">Library
+                                Home Page</a>
+                            <a href="https://ezproxy.jnu.ac.in/login"
+                                class="block px-12 py-2 text-gray-700 hover:bg-gray-200 hover:text-blue-600">Remote
+                                Access</a>
+                            <a href="http://jnucatalogue.jnu.ac.in:8000/"
+                                class="block px-12 py-2 text-gray-700 hover:bg-gray-200 hover:text-blue-600">Online
+                                Catalogue (Internet)</a>
+                            <a href="http://jnuonlinecatlog.jnu.ac.in:8000/cgi-bin/gw/chameleon/"
+                                class="block px-12 py-2 text-gray-700 hover:bg-gray-200 hover:text-blue-600">Online
+                                Catalogue (Intranet)</a>
+                            <a href="http://lib.jnu.ac.in/Onilne_Databases"
+                                class="block px-12 py-2 text-gray-700 hover:bg-gray-200 hover:text-blue-600">Online
+                                Databases</a>
+                            <a href="http://lib.jnu.ac.in/online_journals"
+                                class="block px-12 py-2 text-gray-700 hover:bg-gray-200 hover:text-blue-600">E-Journals</a>
+                            <a href="http://lib.jnu.ac.in/e-newspapers"
+                                class="block px-12 py-2 text-gray-700 hover:bg-gray-200 hover:text-blue-600">E-Newspapers</a>
+                            <a href="http://lib.jnu.ac.in/e-books"
+                                class="block px-12 py-2 text-gray-700 hover:bg-gray-200 hover:text-blue-600">E-Books</a>
+                            <a href="https://jnu.irins.org/"
+                                class="block px-12 py-2 text-gray-700 hover:bg-gray-200 hover:text-blue-600">JNU IRINS -
+                                Faculty Profile</a>
+                            <a href="https://shodhganga.inflibnet.ac.in/"
+                                class="block px-12 py-2 text-gray-700 hover:bg-gray-200 hover:text-blue-600">Shodhganga</a>
+                            <a href="https://shodh.inflibnet.ac.in/"
+                                class="block px-12 py-2 text-gray-700 hover:bg-gray-200 hover:text-blue-600">Shodhgangotri</a>
+                            <a href="http://lib.jnu.ac.in/Single_Window_Search"
+                                class="block px-12 py-2 text-gray-700 hover:bg-gray-200 hover:text-blue-600">Single
+                                window search</a>
+                        </div>
+                    </div>
+                    <a href="https://www.jnu.ac.in/hostel"
+                        class="block px-8 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Hostel</a>
+                </div>
+            </div>
+
+            <div class="relative">
+                <button id="mobile-more-button"
+                    class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600 focus:outline-none">
+                    More
+                    <svg class="inline-block w-4 h-4 ml-1 -mt-1 transform transition-transform duration-200" fill="none"
+                        stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                <div id="mobile-more-menu" class="hidden bg-gray-50 py-2">
+                    <a href="Newsletter.html"
+                        class="block px-8 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Newsletter</a>
+                    <a href="gallery.html"
+                        class="block px-8 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Gallery</a>
+                </div>
+            </div>
+
+            <a href="Contact_Us.html"
+                class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Contact us</a>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="py-16 bg-white mr-8">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h1 class="text-4xl md:text-5xl font-extrabold text-blue-800">ABVSME Event Archive</h1>
+                    <p class="mt-4 text-lg text-gray-600">A look back at our memorable events</p>
+                </div>
+
+                <h2 class="text-3xl font-bold text-blue-800 mb-8 border-b-2 border-blue-200 pb-2 text-center">Past
+                    Events</h2>
+
+                <section class="py-16 bg-white text-center">
+                    <div class="prose max-w-none">
+                        <p> <img loading="lazy" src="Images/News&Events/AtalSmritiSamvad_20Aug25.jpg"
+                                alt="Atal Smriti Samvad 2025"
+                                class="inline-block max-w-full h-auto rounded-lg shadow-md"></p>
+                        <hr class="my-8" />
+                        <p> <img loading="lazy" src="Images/News&Events/abvsme_19Mar25.jpg" alt="abvsme_19Mar25"
+                                class="inline-block max-w-full h-auto rounded-lg shadow-md"></p>
+                        <hr class="my-8" />
+                        <p><img loading="lazy" alt="ABVSME" class="inline-block max-w-full h-auto rounded-lg shadow-md"
+                                src="Images/News&Events/archive/abvsme_29Jan25.jpg" /></p>
+                        <hr class="my-8" />
+                        <p><img loading="lazy" alt="ABVSME" class="inline-block max-w-full h-auto rounded-lg shadow-md"
+                                height="487" src="Images/News&Events/archive/abvsme_27Nov24.png" width="487" /></p>
+                        <hr class="my-8" />
+                        <p><img loading="lazy" alt="ABVSME" class="inline-block max-w-full h-auto rounded-lg shadow-md"
+                                src="Images/News&Events/archive/abvsme_13Nov24.png" /></p>
+                        <hr class="my-8" />
+                        <p><img loading="lazy" alt="abvsme" class="inline-block max-w-full h-auto rounded-lg shadow-md"
+                                src="Images/News&Events/archive/abvsme_11nov24.png" /></p>
+                        <hr class="my-8" />
+                        <p style="text-align: center;"><span><img loading="lazy" alt="ABVSME"
+                                    class="inline-block max-w-full h-auto rounded-lg shadow-md"
+                                    src="Images/News&Events/archive/abvsme_24-25Sep24.jpg" /></span></p>
+                        <hr class="my-8" />
+                        <p><img loading="lazy" alt="" class="inline-block max-w-full h-auto rounded-lg shadow-md"
+                                src="Images/News&Events/archive/UDYAMSAGAR%20FLEX.jpg" /></p>
+                        <p><img loading="lazy" alt="" class="inline-block max-w-full h-auto rounded-lg shadow-md"
+                                src="Images/News&Events/archive/UDYAMSAGAR-2.jpeg" /></p>
+                        <p><img loading="lazy" alt="" class="inline-block max-w-full h-auto rounded-lg shadow-md"
+                                src="Images/News&Events/archive/UDYAMSAGAR-3.jpeg" /></p>
+                        <p><img loading="lazy" alt="ABVSME Memorial Lecture"
+                                class="inline-block max-w-full h-auto rounded-lg shadow-md"
+                                src="Images/News&Events/archive/abvsme-Memoriallecture16Aug24.png" /></p>
+                        <p><a href="https://www.jnu.ac.in/sites/default/files/current_events/abvsme_fdp_June2024.pdf"><img
+                                    loading="lazy" alt="ABVSME_FDP_June2024"
+                                    class="inline-block max-w-full h-auto rounded-lg shadow-md"
+                                    src="Images/News&Events/archive/abvsme_fdp_June2024.jpg" /></a>  <img loading="lazy"
+                                alt="ABVSME" class="inline-block max-w-full h-auto rounded-lg shadow-md" height="426"
+                                src="Images/News&Events/archive/abvsme_workshop21May24.jpg" width="568" /></p>
+                        <p><img loading="lazy" alt="ABVSME" class="inline-block max-w-full h-auto rounded-lg shadow-md"
+                                height="662" src="Images/News&Events/archive/abvsme_summit18May24.jpg"
+                                width="398" />      <img loading="lazy" alt="ABVSME"
+                                class="inline-block max-w-full h-auto rounded-lg shadow-md" height="654"
+                                src="Images/News&Events/archive/abvsme_1May24.jpg" width="463" /></p>
+                        <p><img loading="lazy" alt="ABVSME" class="inline-block max-w-full h-auto rounded-lg shadow-md"
+                                height="567" src="Images/News&Events/archive/abvsme_26Apr24.png" width="394" />     <img
+                                loading="lazy" alt="ABVSME" class="inline-block max-w-full h-auto rounded-lg shadow-md"
+                                src="Images/News&Events/archive/abvsme_24Apr24.png" /></p>
+                        <p><img loading="lazy" alt="21 Feb 2024"
+                                class="inline-block max-w-full h-auto rounded-lg shadow-md"
+                                src="Images/News&Events/archive/grp-discussion-21Feb24.png" />     <img loading="lazy"
+                                alt="21 Feb 2024" class="inline-block max-w-full h-auto rounded-lg shadow-md"
+                                height="364" src="Images/News&Events/archive/excelmantra.png" width="257" /></p>
+                        <p><img loading="lazy" alt="12 Feb 2024"
+                                class="inline-block max-w-full h-auto rounded-lg shadow-md" height="345"
+                                src="Images/News&Events/archive/abvsme_12Feb24.png" width="525" />     <img
+                                loading="lazy" alt="9 Feb 2024"
+                                class="inline-block max-w-full h-auto rounded-lg shadow-md" height="339"
+                                src="Images/News&Events/archive/abvsme_9Feb24.png" width="479" /></p>
+                        <p><img loading="lazy" alt="ABVSME seminar"
+                                class="inline-block max-w-full h-auto rounded-lg shadow-md" height="719"
+                                src="Images/News&Events/archive/abvsme_seminar_Jan2024.png" width="508" />     <img
+                                loading="lazy" alt="Arvind Gupta lecture"
+                                class="inline-block max-w-full h-auto rounded-lg shadow-md" height="411"
+                                src="Images/News&Events/archive/abvsme_arvindgupta.png" width="536" /></p>
+                        <p><img loading="lazy" alt="Tripurari Pandey"
+                                class="inline-block max-w-full h-auto rounded-lg shadow-md" height="643"
+                                src="Images/News&Events/archive/abvsme_TripurariPandey.png" width="451" />     <img
+                                loading="lazy" alt="abvsme book launch"
+                                class="inline-block max-w-full h-auto rounded-lg shadow-md" height="605"
+                                src="Images/News&Events/archive/abvsme-booklaunch.jpeg" width="427" /></p>
+                        <p><img loading="lazy" alt="abvsme" class="inline-block max-w-full h-auto rounded-lg shadow-md"
+                                height="271" src="Images/News&Events/archive/poster1.jpeg" width="384" />     <img
+                                loading="lazy" alt="abvsme" class="inline-block max-w-full h-auto rounded-lg shadow-md"
+                                height="225" src="Images/News&Events/archive/Registration%20detail.jpeg"
+                                width="319" />     <img loading="lazy" alt="abvsme"
+                                class="inline-block max-w-full h-auto rounded-lg shadow-md" height="265"
+                                src="Images/News&Events/archive/Startup%20idea%20pitch%20competition.jpeg"
+                                width="376" /></p>
+                        <p><strong><a href="Images/News&Events/archive/ViksitBharat.jpg"><img loading="lazy" alt=""
+                                        class="inline-block max-w-full h-auto rounded-lg shadow-md" height="500"
+                                        src="Images/News&Events/archive/ViksitBharat.jpg"
+                                        width="500" /></a>     <strong><a
+                                        href="Images/News&Events/archive/AcademiaWorldCollaboration.jpg"><img
+                                            loading="lazy" alt=""
+                                            class="inline-block max-w-full h-auto rounded-lg shadow-md" height="500"
+                                            src="Images/News&Events/archive/AcademiaWorldCollaboration.jpg"
+                                            width="500" /></a></strong></strong></p>
+                        <p><strong><strong><a href="Images/News&Events/archive/InaugurationCeremony.jpg"><img
+                                            loading="lazy" alt=""
+                                            class="inline-block max-w-full h-auto rounded-lg shadow-md" height="500"
+                                            src="Images/News&Events/archive/InaugurationCeremony.jpg"
+                                            width="500" /></a>      <a
+                                        href="Images/News&Events/archive/GuestLectureSeries.jpg"><img loading="lazy"
+                                            alt="" class="inline-block max-w-full h-auto rounded-lg shadow-md"
+                                            height="500" src="Images/News&Events/archive/GuestLectureSeries.jpg"
+                                            width="500" /></a></strong></strong></p>
+                        <p><strong><img loading="lazy" alt="ABVSME Bharat Ratna prog"
+                                    class="inline-block max-w-full h-auto rounded-lg shadow-md"
+                                    src="Images/News&Events/archive/ABVSME_BharatRatna_16-8-2023.png" />         <img
+                                    loading="lazy" alt="abvsme seminar"
+                                    class="inline-block max-w-full h-auto rounded-lg shadow-md"
+                                    src="Images/News&Events/archive/abvsme-seminar-aug2023.png" /></strong></p>
+                        <hr class="my-8" />
+                        <div class="text-justify"><strong><span>"In today's data-driven world, organizations rely
+                                    heavily on data analysis to uncover patterns, trends, and correlations that can
+                                    drive business growth and efficiency. By attending this summer school of ABVSME, 
+                                    participants will learn various data analysis techniques, such as data cleaning,
+                                    visualization, and statistical modeling, which are crucial for extracting valuable
+                                    information from complex datasets" </span></strong></div>
+                        <div class="text-justify"><strong><span>Students who want to build or improve their data
+                                    analysis skills, even if they do not currently work with data, might also benefit
+                                    immensely from attending the course and also to acquire a competitive advantage in
+                                    today's data-driven world must attend. Certificates will be issued to all the
+                                    Participants after successful completion of the course (Criteria- Attendance and
+                                    Periodical Assignments). Students should register by 2nd June 2023, Selected
+                                    Students will be informed by mail by 3rd June 2023</span></strong></div>
+                        <p><strong><img loading="lazy" alt="ABVSME Summer School"
+                                    class="inline-block max-w-full h-auto rounded-lg shadow-md"
+                                    src="Images/News&Events/archive/abvsme_summerschool.jpg" /></strong></p>
+                        <hr class="my-8" />
+                        <p><strong><img loading="lazy" alt="ABVSME Parimal Raj"
+                                    class="inline-block max-w-full h-auto rounded-lg shadow-md" height="541"
+                                    src="Images/News&Events/archive/abvsme-parimalraj.jpeg" width="541" />      
+                                   <img loading="lazy" alt="ABVSME Rajwani"
+                                    class="inline-block max-w-full h-auto rounded-lg shadow-md"
+                                    src="Images/News&Events/archive/abvsme-rajwani.png" /></strong></p>
+                        <hr class="my-8" />
+                        <p><strong><img loading="lazy" alt="ABVSME Rajneesh Singh"
+                                    class="inline-block max-w-full h-auto rounded-lg shadow-md" height="349"
+                                    src="Images/News&Events/archive/abvsme-RajneeshSingh.jpeg" width="494" />      
+                                   <img loading="lazy" alt="abvsme Sustainbility Awareness"
+                                    class="inline-block max-w-full h-auto rounded-lg shadow-md" height="507"
+                                    src="Images/News&Events/archive/abvsme_sustainbilityAwareness.jpg"
+                                    width="359" /></strong></p>
+                        <hr class="my-8" />
+                        <p><strong><img loading="lazy" alt="ABVSME webinar"
+                                    class="inline-block max-w-full h-auto rounded-lg shadow-md"
+                                    src="Images/News&Events/archive/abvsme_webinar-24-04-2023.png" />         <img
+                                    loading="lazy" alt="abvsme sonal kumar"
+                                    class="inline-block max-w-full h-auto rounded-lg shadow-md" height="602"
+                                    src="Images/News&Events/archive/abvsme-sonalkumar.jpg" width="426" /></strong></p>
+                        <hr class="my-8" />
+                        <p><strong><img loading="lazy" alt="abvsme-sunilbudhiraja"
+                                    class="inline-block max-w-full h-auto rounded-lg shadow-md"
+                                    src="Images/News&Events/archive/abvsme-sunilbudhiraja.jpeg" />         <img
+                                    loading="lazy" alt="abvsme Prof Madhu Vij"
+                                    class="inline-block max-w-full h-auto rounded-lg shadow-md" height="452"
+                                    src="Images/News&Events/archive/abvsme-ProfMadhuVij.jpeg" width="626" /></strong>
+                        </p>
+                        <hr class="my-8" />
+                        <p><strong><img loading="lazy" alt="GG Dwivedi"
+                                    class="inline-block max-w-full h-auto rounded-lg shadow-md"
+                                    src="Images/News&Events/archive/abvsme-GGDwivedi.jpeg" />          <img
+                                    loading="lazy" alt="Vasileios Rokos"
+                                    class="inline-block max-w-full h-auto rounded-lg shadow-md"
+                                    src="Images/News&Events/archive/abvsme_vasileiosrokos.jpeg" /></strong></p>
+                        <hr class="my-8" />
+                        <p><strong><img loading="lazy" alt="career path"
+                                    class="inline-block max-w-full h-auto rounded-lg shadow-md" height="600"
+                                    src="Images/News&Events/archive/abvsme-Career%20Path%20after%20MBA.jpeg"
+                                    width="600" />         <img loading="lazy" alt="ABVSME lecture"
+                                    class="inline-block max-w-full h-auto rounded-lg shadow-md" height="600"
+                                    src="Images/News&Events/archive/Guest%20Lecture_ABVSME.jpeg" width="600" /></strong>
+                        </p>
+                        <p><strong><img loading="lazy" alt="Workshop"
+                                    class="inline-block max-w-full h-auto rounded-lg shadow-md"
+                                    src="Images/News&Events/archive/ABVSME_Workshop_1-11-2022.jpg" />         <img
+                                    loading="lazy" alt="Neha Parashar"
+                                    class="inline-block max-w-full h-auto rounded-lg shadow-md"
+                                    src="Images/News&Events/archive/AtalSamvad_NehaParashar.jpg" /></strong></p>
+                        <p><strong><img loading="lazy" alt="D Goel"
+                                    class="inline-block max-w-full h-auto rounded-lg shadow-md"
+                                    src="Images/News&Events/archive/ABVSME_DGoel_19-10-2022.jpeg" />         <img
+                                    loading="lazy" alt="Abhishek Singh"
+                                    class="inline-block max-w-full h-auto rounded-lg shadow-md"
+                                    src="Images/News&Events/archive/ABVSME_AbhishekSingh_7-10-2022.jpeg" /></strong></p>
+                        <p><strong><img loading="lazy" alt="Vinay Nangia"
+                                    class="inline-block max-w-full h-auto rounded-lg shadow-md"
+                                    src="Images/News&Events/archive/ABVSME_VinayNangia_28-9-2022.jpeg" />        
+                                <img loading="lazy" alt="Gagan Singh"
+                                    class="inline-block max-w-full h-auto rounded-lg shadow-md"
+                                    src="Images/News&Events/archive/ABVSME_GaganSingh_21-9-2022.jpeg" /></strong></p>
+                        <p><strong><img loading="lazy" alt="M Kaushik"
+                                    class="inline-block max-w-full h-auto rounded-lg shadow-md"
+                                    src="Images/News&Events/archive/ABVSME_MKaushik_31-8-2022.jpeg" />        
+                                <img loading="lazy" alt="webinar"
+                                    class="inline-block max-w-full h-auto rounded-lg shadow-md"
+                                    src="Images/News&Events/archive/abvsme_webinar_start-upEntrep.png" /></strong></p>
+                        <p><strong><strong><img loading="lazy" alt="ABVSME Sushil Kumar Sharma"
+                                        class="inline-block max-w-full h-auto rounded-lg shadow-md"
+                                        src="Images/News&Events/archive/ABVSME_SushilKumarSharma.png" /></strong>  
+                                      <img loading="lazy" alt="Anil Kumar Talk"
+                                    class="inline-block max-w-full h-auto rounded-lg shadow-md" height="519"
+                                    src="Images/News&Events/archive/ABVSME-AnilKumar.jpg" width="616" /></strong></p>
+                        <p><strong><strong><img loading="lazy" alt="Deepak Kumar Srivastava"
+                                        class="inline-block max-w-full h-auto rounded-lg shadow-md"
+                                        src="Images/News&Events/archive/Abvsme_expertTalk_DeepakKumarSrivastava.jpg" /></strong>  
+                                      <strong><img loading="lazy" alt="ABVSME Nitika Sharma"
+                                        class="inline-block max-w-full h-auto rounded-lg shadow-md"
+                                        src="Images/News&Events/archive/Abvsme_expertTalk_NitikaSharma.jpg" /></strong></strong>
+                        </p>
+                        <p><strong><strong><img loading="lazy" alt="Exper Talk by Monika Srivastava"
+                                        class="inline-block max-w-full h-auto rounded-lg shadow-md"
+                                        src="Images/News&Events/archive/abvsme_talk_MonikaSrivastava.jpg" /></strong>  
+                                      <img loading="lazy" alt="Atal Samvad"
+                                    class="inline-block max-w-full h-auto rounded-lg shadow-md"
+                                    src="Images/News&Events/archive/abvsme_5thLecture_AtalSamvad.jpg" /></strong></p>
+                        <p><strong><img loading="lazy" alt="Time series data analysis"
+                                    class="inline-block max-w-full h-auto rounded-lg shadow-md" height="388"
+                                    src="Images/News&Events/archive/abvsme_Times-series-data-analysis.jpg"
+                                    width="690" />         <img loading="lazy" alt="Atal Samvad"
+                                    class="inline-block max-w-full h-auto rounded-lg shadow-md"
+                                    src="Images/News&Events/archive/abvsme_4thLecture_AtalSamvad.jpg" /></strong></p>
+                        <p><strong><img loading="lazy" alt="Atal Samvad"
+                                    class="inline-block max-w-full h-auto rounded-lg shadow-md"
+                                    src="Images/News&Events/archive/abvsme_AtalSamvad_3rdLecture.jpg" />         
+                                <span><img loading="lazy" alt="ABVSME webinar"
+                                        class="inline-block max-w-full h-auto rounded-lg shadow-md" height="638"
+                                        src="Images/News&Events/archive/ABVSME_AICJNUFI_webinar.jpg"
+                                        width="902" /></span></strong></p>
+                        <p style="text-align: center;"><strong><span><img loading="lazy" alt=""
+                                        class="inline-block max-w-full h-auto rounded-lg shadow-md"
+                                        src="Images/News&Events/archive/ABVSME_Webinar_14June2021.jpg" /></span>  
+                                      <span><img loading="lazy" alt=""
+                                        class="inline-block max-w-full h-auto rounded-lg shadow-md"
+                                        src="Images/News&Events/archive/ABVSME_Workshop_TimeSeries.jpg" /></span></strong>
+                        </p>
+                        <div class="overflow-x-auto">
+                            <table class="w-full border-collapse border border-gray-300 my-4">
+                                <tbody>
+                                    <tr>
+                                        <td class="border border-gray-300 p-2"><strong><strong>Day 1</strong></strong>
+                                        </td>
+                                        <td class="border border-gray-300 p-2"><strong><strong>Day 2</strong></strong>
+                                        </td>
+                                        <td class="border border-gray-300 p-2"><strong><strong>Day 3</strong></strong>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="border border-gray-300 p-2">
+                                            <div class="text-align-justify"><strong><strong>Assignment -&nbsp;</strong>
+                                                    <a href="https://bit.ly/3g2ygb8"
+                                                        class="text-blue-600 hover:underline">https://bit.ly/3g2ygb8</a></strong>
+                                            </div>
+                                            <div class="text-align-justify"><strong><strong>Feedback Form - </strong><a
+                                                        href="https://bit.ly/3fI97Ud"
+                                                        class="text-blue-600 hover:underline">https://bit.ly/3fI97Ud</a></strong>
+                                            </div>
+                                        </td>
+                                        <td class="border border-gray-300 p-2">
+                                            <div class="text-align-justify"><strong><a
+                                                        href="Files/events/SHARE%20PRICE%20DATA.xlsx"
+                                                        class="text-blue-600 hover:underline">Share Price
+                                                        Data</a></strong></div>
+                                            <div class="text-align-justify"><strong><a
+                                                        href="Files/events/GameStop%20Stock%20Prices.xlsx"
+                                                        class="text-blue-600 hover:underline">GameStop Stock
+                                                        Prices</a></strong></div>
+                                            <div class="text-align-justify"><strong><a
+                                                        href="Files/events/GOLD%20PRICES.xlsx"
+                                                        class="text-blue-600 hover:underline">Gold Prices</a></strong>
+                                            </div>
+                                            <div class="text-align-justify"><strong><a
+                                                        href="Files/events/EXCHANGE%20RATE%20DATA.xlsx"
+                                                        class="text-blue-600 hover:underline">Exchange Rate
+                                                        data</a></strong></div>
+                                            <div class="text-align-justify"><strong><a
+                                                        href="Files/events/VIX-NSE%20data.xlsx"
+                                                        class="text-blue-600 hover:underline">VIX-NSE data</a></strong>
+                                            </div>
+                                            <div class="text-align-justify">
+                                                <div class="text-align-justify">
+                                                    <strong><strong>Assignment&nbsp;-&nbsp;</strong><a
+                                                            href="https://bit.ly/3yV15it"
+                                                            class="text-blue-600 hover:underline">https://bit.ly/3yV15it</a></strong>
+                                                </div>
+                                                <div class="text-align-justify"><strong><strong>Feedback Form
+                                                            -</strong>&nbsp;<a href="https://bit.ly/3phWZfA"
+                                                            class="text-blue-600 hover:underline">https://bit.ly/3phWZfA</a></strong>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="border border-gray-300 p-2">
+                                            <p><strong><strong>Assignment -</strong> <a href="https://bit.ly/2SYIq4M"
+                                                        class="text-blue-600 hover:underline">https://bit.ly/2SYIq4M</a></strong>
+                                            </p>
+                                            <p><strong><strong>Feedback Form -</strong> <a href="https://bit.ly/3piCXBM"
+                                                        class="text-blue-600 hover:underline">https://bit.ly/3piCXBM</a></strong>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <hr class="my-8" />
+                        <p><strong><img loading="lazy" alt=""
+                                    class="inline-block max-w-full h-auto rounded-lg shadow-md"
+                                    src="https://www.jnu.ac.in/sites/default/files/upload/2020-12/ABVSME_Webinar11-12-2020_0.jpeg" /></strong>
+                        </p>
+                        <hr class="my-8" />
+                        <p><strong><strong>Atal Bihari Vajpayee School of Management and Entrepreneurship (ABVSME),
+                                    Jawaharlal Nehru University organised<em>Online Two-week Faculty Development
+                                        Programme from 20th July – 31<sup>st</sup> July, 2020 On</em></strong><a
+                                    href="Files/events/ABVSME_FDP_Brouchure.pdf"
+                                    class="text-blue-600 hover:underline"><strong><em> COVID -19 New Age Teaching
+                                            Pedagogy: Innovative Tools, Techniques and Research Methods for Efficient
+                                            Business Management Teaching in Digital Era</em></strong></a></strong></p>
+                        <h4 class="text-center"><strong><a href="Files/events/FDP-ABVSME_Brochure.pdf"
+                                    class="text-blue-600 hover:underline"><strong>Programme
+                                        details</strong></a></strong></h4>
+                        <h4><strong><a href="Files/events/FDP-ABVSME_Schedule.pdf"
+                                    class="text-blue-600 hover:underline"><strong>Programme
+                                        Schedule</strong></a></strong></h4>
+                        <h4 class="text-center"><strong>Those registered candidates who have not filled the form please
+                                complete it for the issue of certificate -&nbsp;<strong><a href="https://bit.ly/2ZbW317"
+                                        class="text-blue-600 hover:underline">https://bit.ly/2ZbW317</a></strong><a
+                                    href="https://bit.ly/2ZbW317"
+                                    class="text-blue-600 hover:underline"><strong> </strong></a>&nbsp;</strong></h4>
+
+                        <div class="overflow-x-auto">
+                            <table class="min-w-full bg-white border border-gray-200">
+                                <thead class="bg-blue-800 text-white">
+                                    <tr>
+                                        <th class="py-3 px-4 uppercase font-semibold text-sm text-center">Day</th>
+                                        <th class="py-3 px-4 uppercase font-semibold text-sm text-center">Theme</th>
+                                        <th class="py-3 px-4 uppercase font-semibold text-sm text-center">Email of
+                                            Resource Person</th>
+                                        <th class="py-3 px-4 uppercase font-semibold text-sm text-center">Feedback Form
+                                        </th>
+                                        <th class="py-3 px-4 uppercase font-semibold text-sm text-center">
+                                            Assessment/QUIZ</th>
+                                        <th class="py-3 px-4 uppercase font-semibold text-sm text-center">Case
+                                            Study/Resource Material</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="text-gray-700">
+                                    <tr class="hover:bg-gray-100 border-b">
+                                        <td class="py-3 px-4 align-top"><strong>DAY 1</strong><br>(Monday 20 July, 2020)
+                                        </td>
+                                        <td class="py-3 px-4 align-top">Media and Communication for Business Management
+                                            in Digital Era</td>
+                                        <td class="py-3 px-4 align-top text-sm break-all">
+                                            shailendra.mehta@micamail.in<br>cio-mhrd@gov.in<br>aditya_bh@yahoo.com<br>drajitabh@gmail.com
+                                        </td>
+                                        <td class="py-3 px-4 align-top"><a href="https://bit.ly/2OHP6i4"
+                                                class="text-blue-600 hover:underline" target="_blank">Feedback Link</a>
+                                        </td>
+                                        <td class="py-3 px-4 align-top">
+                                            Quiz 1: <a href="https://bit.ly/3jmFd7K"
+                                                class="text-blue-600 hover:underline" target="_blank">Link</a><br>
+                                            Quiz 2: <a href="https://bit.ly/3jmH5xi"
+                                                class="text-blue-600 hover:underline" target="_blank">Link</a>
+                                        </td>
+                                        <td class="py-3 px-4 align-top">-</td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-100 border-b">
+                                        <td class="py-3 px-4 align-top"><strong>DAY 2</strong><br>(Tuesday 21 July,
+                                            2020)</td>
+                                        <td class="py-3 px-4 align-top">Economic Environment and Policy in Digital Era
+                                        </td>
+                                        <td class="py-3 px-4 align-top text-sm break-all">
+                                            sbdangayach@gmail.com<br>kapil.mhow@gmail.com<br>kd1810@yahoo.com<br>manasamogh@gmail.com
+                                        </td>
+                                        <td class="py-3 px-4 align-top"><a href="https://bit.ly/2CSeu2c"
+                                                class="text-blue-600 hover:underline" target="_blank">Feedback Link</a>
+                                        </td>
+                                        <td class="py-3 px-4 align-top">
+                                            Quiz 3: <a href="https://bit.ly/2CqBkOC"
+                                                class="text-blue-600 hover:underline" target="_blank">Link</a><br>
+                                            Quiz 4: <a href="https://bit.ly/2Cptepv"
+                                                class="text-blue-600 hover:underline" target="_blank">Link</a>
+                                        </td>
+                                        <td class="py-3 px-4 align-top">-</td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-100 border-b">
+                                        <td class="py-3 px-4 align-top"><strong>DAY 3</strong><br>(Wednesday 22 July,
+                                            2020)</td>
+                                        <td class="py-3 px-4 align-top">Novel Approach in Management Learning</td>
+                                        <td class="py-3 px-4 align-top text-sm break-all">
+                                            ceo@petonic.in<br>team@petonic.in<br>ketan@kgguruji.com<br>geetanjali1976@gmail.com<br>shekhar.trivedi@ghsimr.ac.in
+                                        </td>
+                                        <td class="py-3 px-4 align-top"><a href="https://bit.ly/3jnHoYN"
+                                                class="text-blue-600 hover:underline" target="_blank">Feedback Link</a>
+                                        </td>
+                                        <td class="py-3 px-4 align-top">
+                                            Quiz 5: <a href="https://bit.ly/3fTvZ0z"
+                                                class="text-blue-600 hover:underline" target="_blank">Link</a><br>
+                                            Quiz 6: <a href="https://bit.ly/3g3vLEp"
+                                                class="text-blue-600 hover:underline" target="_blank">Link</a>
+                                        </td>
+                                        <td class="py-3 px-4 align-top"><a
+                                                href="Files/events/KgGuruji_CaseStudy_Webinar_Jul2020.pdf"
+                                                class="text-blue-600 hover:underline" target="_blank">Case Method for
+                                                Management Education</a></td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-100 border-b">
+                                        <td class="py-3 px-4 align-top"><strong>DAY 4</strong><br>(Thursday 23 July,
+                                            2020)</td>
+                                        <td class="py-3 px-4 align-top">Entrepreneurship and Social Enterprises</td>
+                                        <td class="py-3 px-4 align-top text-sm break-all">
+                                            pnbhatta@gmail.com<br>r.ramanan@gov.in<br>unnatpandit.jnu@gmail.com<br>prabuddha.ganguli@gmail.com<br>vishwanath@forgeforward.in
+                                        </td>
+                                        <td class="py-3 px-4 align-top"><a href="https://bit.ly/2WQU6Wl"
+                                                class="text-blue-600 hover:underline" target="_blank">Feedback Link</a>
+                                        </td>
+                                        <td class="py-3 px-4 align-top">
+                                            Quiz 7: <a href="https://bit.ly/39kIBLP"
+                                                class="text-blue-600 hover:underline" target="_blank">Link</a><br>
+                                            Quiz 8: <a href="https://bit.ly/2Bmq2ds"
+                                                class="text-blue-600 hover:underline" target="_blank">Link</a>
+                                        </td>
+                                        <td class="py-3 px-4 align-top"><a
+                                                href="Files/events/TALE_Academia_JNU_Day4.pdf"
+                                                class="text-blue-600 hover:underline" target="_blank">Incubation
+                                                Management</a></td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-100 border-b">
+                                        <td class="py-3 px-4 align-top"><strong>DAY 5</strong><br>(Friday 24 July, 2020)
+                                        </td>
+                                        <td class="py-3 px-4 align-top">Strategy Formulation and implementation of
+                                            Digital Tools</td>
+                                        <td class="py-3 px-4 align-top text-sm break-all">
+                                            mukesh.negi@oracle.com<br>prabin@iimidr.ac.in<br>priyagupta@mail.jnu.ac.in<br>pgupta1902@gmail.com<br>lakshaykapilsharma@gmail.com
+                                        </td>
+                                        <td class="py-3 px-4 align-top"><a href="https://bit.ly/3fRXB6h"
+                                                class="text-blue-600 hover:underline" target="_blank">Feedback Link</a>
+                                        </td>
+                                        <td class="py-3 px-4 align-top">
+                                            Quiz 9: <a href="https://bit.ly/3jAAWxB"
+                                                class="text-blue-600 hover:underline" target="_blank">Link</a><br>
+                                            Quiz 10: <a href="https://bit.ly/3jEgls2"
+                                                class="text-blue-600 hover:underline" target="_blank">Link</a>
+                                        </td>
+                                        <td class="py-3 px-4 align-top">
+                                            <a href="Files/events/Data%20Driven%20Insights.pdf"
+                                                class="text-blue-600 hover:underline" target="_blank">Business
+                                                Intelligence & Analytics</a><br>
+                                            <a href="Files/events/Big%20Data%20Analytics.pdf"
+                                                class="text-blue-600 hover:underline" target="_blank">Big Data
+                                                Analytics</a><br>
+                                            <a href="Files/events/Big%20Data%20Analytics%20in%20the%20Management.pdf"
+                                                class="text-blue-600 hover:underline" target="_blank">Big Data Analytics
+                                                in Management</a><br>
+                                            <a href="Files/events/Big%20Data%20in%20Big%20Companies.pdf"
+                                                class="text-blue-600 hover:underline" target="_blank">Big Data in Big
+                                                Companies</a>
+                                        </td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-100 border-b">
+                                        <td class="py-3 px-4 align-top"><strong>DAY 6</strong><br>(Monday 27 July, 2020)
+                                        </td>
+                                        <td class="py-3 px-4 align-top">Analysis of Qualitative & Quantitative and
+                                            Validation of Research Methods</td>
+                                        <td class="py-3 px-4 align-top text-sm break-all">
+                                            Manmeetkbawa@gmail.com<br>sakshi2085@gmail.com<br>parag@neetisolutions.com<br>avik.tan@gmail.com
+                                        </td>
+                                        <td class="py-3 px-4 align-top"><a href="https://bit.ly/3f3nTkI"
+                                                class="text-blue-600 hover:underline" target="_blank">Feedback Link</a>
+                                        </td>
+                                        <td class="py-3 px-4 align-top">
+                                            Quiz 11: <a href="https://bit.ly/3hJusdR"
+                                                class="text-blue-600 hover:underline" target="_blank">Link</a><br>
+                                            Quiz 12: <a href="https://bit.ly/2CPGwLS"
+                                                class="text-blue-600 hover:underline" target="_blank">Link</a>
+                                        </td>
+                                        <td class="py-3 px-4 align-top">-</td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-100 border-b">
+                                        <td class="py-3 px-4 align-top"><strong>DAY 7</strong><br>(Tuesday 28 July,
+                                            2020)</td>
+                                        <td class="py-3 px-4 align-top">Financial Tools and Skillset</td>
+                                        <td class="py-3 px-4 align-top text-sm break-all">
+                                            shvetasingh@dms.iitd.ac.in<br>manojorsharma@gmail.com<br>shegorika@gmail.com<br>Kunjanamalik.phd@fms.edu
+                                        </td>
+                                        <td class="py-3 px-4 align-top"><a href="https://bit.ly/39AV4v6"
+                                                class="text-blue-600 hover:underline" target="_blank">Feedback Link</a>
+                                        </td>
+                                        <td class="py-3 px-4 align-top">
+                                            Quiz 13: <a href="https://bit.ly/3jWFU8a"
+                                                class="text-blue-600 hover:underline" target="_blank">Link</a><br>
+                                            Quiz 14: <a href="https://bit.ly/332VE3u"
+                                                class="text-blue-600 hover:underline" target="_blank">Link</a>
+                                        </td>
+                                        <td class="py-3 px-4 align-top"><a
+                                                href="Files/events/InnovativeAreas_in_FinanceResearch.pdf"
+                                                class="text-blue-600 hover:underline" target="_blank">Innovative Areas
+                                                in Finance Research</a></td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-100 border-b">
+                                        <td class="py-3 px-4 align-top"><strong>DAY 8</strong><br>(Wednesday 29 July,
+                                            2020)</td>
+                                        <td class="py-3 px-4 align-top">Perspectives on Contemporary HRM Research</td>
+                                        <td class="py-3 px-4 align-top text-sm break-all">
+                                            parag@ppsu.ac.in<br>santosh.zokarkar@gmail.com<br>arunattree@gmail.com<br>shachi.yadav@yahoo.com<br>shachiyadav@mail.jnu.ac.in
+                                        </td>
+                                        <td class="py-3 px-4 align-top"><a href="https://bit.ly/3fg73PW"
+                                                class="text-blue-600 hover:underline" target="_blank">Feedback Link</a>
+                                        </td>
+                                        <td class="py-3 px-4 align-top">
+                                            Quiz 15: <a href="https://bit.ly/3hK0N4s"
+                                                class="text-blue-600 hover:underline" target="_blank">Link</a><br>
+                                            Quiz 16: <a href="https://bit.ly/3hN01DW"
+                                                class="text-blue-600 hover:underline" target="_blank">Link</a>
+                                        </td>
+                                        <td class="py-3 px-4 align-top">
+                                            <a href="http://www.riseselfesteem.com/test/?inner"
+                                                class="text-blue-600 hover:underline" target="_blank">Self-Esteem
+                                                Test</a><br>
+                                            <a href="https://openpsychometrics.org/tests/IPIP-BFFM/"
+                                                class="text-blue-600 hover:underline" target="_blank">Personality
+                                                Test</a><br>
+                                            <a href="https://www.testcolor.com/personalitytest/personalitytest.php"
+                                                class="text-blue-600 hover:underline" target="_blank">Color Personality
+                                                Test</a><br>
+                                            <a href="Files/events/EmployeeEngagement.pdf"
+                                                class="text-blue-600 hover:underline" target="_blank">Employee
+                                                Engagement</a>
+                                        </td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-100 border-b">
+                                        <td class="py-3 px-4 align-top"><strong>DAY 9</strong><br>(Thursday 30 July,
+                                            2020)</td>
+                                        <td class="py-3 px-4 align-top">Analytics and Consumer response Modelling</td>
+                                        <td class="py-3 px-4 align-top text-sm break-all">
+                                            provicechancellor@mitwpu.edu.in<br>satya@iiml.ac.in<br>absingh@amity.edu<br>jones.m@greatlakes.edu.in<br>zubin.sethna@regents.ac.uk
+                                        </td>
+                                        <td class="py-3 px-4 align-top"><a href="https://bit.ly/310YNOn"
+                                                class="text-blue-600 hover:underline" target="_blank">Feedback Link</a>
+                                        </td>
+                                        <td class="py-3 px-4 align-top">
+                                            Quiz 17: <a href="https://bit.ly/2DmLC2o"
+                                                class="text-blue-600 hover:underline" target="_blank">Link</a><br>
+                                            Quiz 18: <a href="https://bit.ly/39Mje5J"
+                                                class="text-blue-600 hover:underline" target="_blank">Link</a>
+                                        </td>
+                                        <td class="py-3 px-4 align-top">
+                                            <a href="Files/events/RedefiningCustomerExperience.pdf"
+                                                class="text-blue-600 hover:underline" target="_blank">Redefining
+                                                Customer Experience</a><br>
+                                            <a href="Files/events/Covid-19NewAgeTeachingPedagogy.pdf"
+                                                class="text-blue-600 hover:underline" target="_blank">Consumer Response
+                                                Modeling</a>
+                                        </td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-100">
+                                        <td class="py-3 px-4 align-top"><strong>DAY 10</strong><br>(Friday 31 July,
+                                            2020)</td>
+                                        <td class="py-3 px-4 align-top">E-learning and Development of e-Content</td>
+                                        <td class="py-3 px-4 align-top text-sm break-all">
+                                            pstabeck@amity.edu<br>dnisheeth@rediffmail.com<br>archana.ugc2012@gmail.com<br>milindmarathe@somaiya.edu
+                                        </td>
+                                        <td class="py-3 px-4 align-top"><a href="https://bit.ly/30azZ7y"
+                                                class="text-blue-600 hover:underline" target="_blank">Feedback Link</a>
+                                        </td>
+                                        <td class="py-3 px-4 align-top">
+                                            Quiz 19: <a href="https://bit.ly/2XdrHKc"
+                                                class="text-blue-600 hover:underline" target="_blank">Link</a>
+                                        </td>
+                                        <td class="py-3 px-4 align-top">
+                                            <a href="Files/events/NCD-Nature.pdf" class="text-blue-600 hover:underline"
+                                                target="_blank">Systematic Manipulation of Publication</a><br>
+                                            <a href="Files/events/NCD-Salami.pdf" class="text-blue-600 hover:underline"
+                                                target="_blank">Research Integrity Corner</a><br>
+                                            <a href="Files/events/NCD-Sanitizers.pdf"
+                                                class="text-blue-600 hover:underline" target="_blank">Hand Sanitizers,
+                                                Drug Candidates</a><br>
+                                            <a href="Files/events/NCD-ACS.pdf" class="text-blue-600 hover:underline"
+                                                target="_blank">Therapeutic Agents and Vaccines</a><br>
+                                            <a href="Files/events/ResearchAndPublication.pdf"
+                                                class="text-blue-600 hover:underline" target="_blank">Research &
+                                                Publication Strategy</a><br>
+                                            <a href="Files/events/NCD-UGC-PL.pdf" class="text-blue-600 hover:underline"
+                                                target="_blank">UGC</a><br>
+                                            <a href="Files/events/NCD-UGC-RPE.pdf" class="text-blue-600 hover:underline"
+                                                target="_blank">UGC - Research & Publication Ethics</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+            </div>
+            </div>
+        </section>
+
+    </main>
+
+    <div id="social-sidebar" class="fixed top-1/2 right-0 transform -translate-y-1/2 z-50">
+        <!-- Close button for mobile -->
+        <button id="closeSocialBtn" class="social-close-btn" onclick="hideSocialSidebar()"
+            aria-label="Close social media sidebar">
+            ×
+        </button>
+        <div class="flex flex-col space-y-2">
+            <a href="https://in.linkedin.com/company/abvsme" target="_blank"
+                class="bg-blue-700 text-white w-12 h-12 rounded-full flex items-center justify-center hover:bg-blue-800 transition transform hover:scale-110 duration-300">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://www.facebook.com/ABVSME/" target="_blank"
+                class="bg-blue-600 text-white w-12 h-12 rounded-full flex items-center justify-center hover:bg-blue-700 transition transform hover:scale-110 duration-300">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/abvsme/?hl=en" target="_blank"
+                class="bg-pink-500 text-white w-12 h-12 rounded-full flex items-center justify-center hover:bg-pink-600 transition transform hover:scale-110 duration-300">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://x.com/abvsme_jnu" target="_blank"
+                class="bg-gray-800 text-white w-12 h-12 rounded-full flex items-center justify-center hover:bg-black transition transform hover:scale-110 duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 16 16">
+                    <path
+                        d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.6.75ZM11.49 13.5h1.432L4.162 2.16h-1.55l8.88 11.34Z" />
+                </svg>
+
+            </a>
+            <a href="mailto:info@abvsme.jnu.ac.in"
+                class="bg-gray-600 text-white w-12 h-12 rounded-full flex items-center justify-center hover:bg-gray-700 transition transform hover:scale-110 duration-300">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a href="tel:+91-11-2674-1228"
+                class="bg-green-500 text-white w-12 h-12 rounded-full flex items-center justify-center hover:bg-green-600 transition transform hover:scale-110 duration-300">
+                <i class="fas fa-phone-alt"></i>
+            </a>
+        </div>
+    </div>
+
+    <button id="scrollToTopBtn"
+        class="hidden fixed bottom-8 right-8 bg-blue-600 text-white rounded-full p-4 shadow-lg hover:bg-blue-700 transition duration-300 z-50">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+        </svg>
+    </button>
+
+    <footer class="bg-gray-900 text-gray-300">
+        <div class="container mx-auto px-4 py-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center md:text-left">
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-4">About ABVSME</h3>
+                    <p class="text-sm">
+                        The Atal Bihari Vajpayee School of Management and Entrepreneurship,JNU was established in 2018,
+                        with a vision to integrate excellence in Management Education with the University's strong
+                        tradition of interdisciplinary research and social responsibility.
+                    </p>
+                    <p class="mt-4 text-sm">
+                        Jawaharlal Nehru University, <br>New Delhi - 110067, India
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-4">Quick Links</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="about.html" class="hover:text-white transition duration-300">About Us</a></li>
+                        <li><a href="Mba-admission.html" class="hover:text-white transition duration-300">MBA
+                                Admission</a></li>
+                        <li><a href="mba-courses.html" class="hover:text-white transition duration-300">MBA
+                                Program</a></li>
+                        <li><a href="Placements.html" class="hover:text-white transition duration-300">Placements</a>
+                        </li>
+                        <li><a href="https://www.jnu.ac.in/abvsme_faculty"
+                                class="hover:text-white transition duration-300">Faculty</a></li>
+                        <li><a href="https://www.jnu.ac.in/sitemap"
+                                class="hover:text-white transition duration-300">Site Map</a></li>
+                        <li><a href="https://www.jnu.ac.in/feedback"
+                                class="hover:text-white transition duration-300">Feedback</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-4">Contact us</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="mailto:info@abvsme.jnu.ac.in"
+                                class="hover:text-white transition duration-300">info@abvsme.jnu.ac.in</a></li>
+                        <li><a href="tel:+91-11-2674-2676"
+                                class="hover:text-white transition duration-300">+91-11-2674-2676</a></li>
+                    </ul>
+                    <div class="flex justify-center md:justify-start space-x-4 mt-4">
+                        <a href="https://www.facebook.com/ABVSME" class="text-gray-400 hover:text-white text-xl"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://x.com/abvsme_jnu" class="text-gray-400 hover:text-white text-xl"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="https://in.linkedin.com/company/abvsme"
+                            class="text-gray-400 hover:text-white text-xl"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="mailto:info@abvsme.jnu.ac.in" class="text-gray-400 hover:text-white text-xl"><i
+                                class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <a href="https://www.jnu.ac.in/" target="_blank" rel="noopener noreferrer"
+                        class="flex items-center justify-center md:justify-start space-x-3">
+                        <img loading="lazy" src="Images/JNU_LOGO.jpg" alt="JNU Logo"
+                            class="h-12 w-auto bg-white p-1 rounded-md">
+                        <h3 class="text-lg font-semibold text-white">Jawaharlal Nehru University</h3>
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-6 text-center text-sm">
+                <p>© Jawaharlal Nehru University. New Mehrauli Road, New Delhi 110067. All rights reserved.</p>
+                <p class="mt-2">Last reviewed and updated on 2025-08-06</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="script.js" defer></script>
+
+</body>
+
+</html>
+</

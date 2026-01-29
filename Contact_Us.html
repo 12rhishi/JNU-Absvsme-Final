@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Images/JNU_LOGO.jpg" type="image/x-icon">
+    <title>Contact us | ABVSME </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+    <div id="top-bar"
+        class="bg-gray-900 text-gray-300 text-xs py-2 hidden md:block transition-all duration-300 ease-in-out">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <div class="flex space-x-3">
+                <a href="https://www.jnu.ac.in/main/"
+                    class="hover:text-white hover:underline transition duration-200">JNU</a>
+                <span class="text-gray-600">|</span>
+                <a href="https://www.jnu.ac.in/Right-to-Information"
+                    class="hover:text-white hover:underline transition duration-200">RTI</a>
+                <span class="text-gray-600">|</span>
+                <a href="https://www.jnu.ac.in/sites/default/files/JNUTelDirectory.pdf"
+                    class="hover:text-white hover:underline transition duration-200">Directory</a>
+                <span class="text-gray-600">|</span>
+                <a href="https://www.jnu.ac.in/contactus"
+                    class="hover:text-white hover:underline transition duration-200">Contact us</a>
+                <span class="text-gray-600">|</span>
+                <a href="https://www.jnu.ac.in/emergency"
+                    class="hover:text-white hover:underline transition duration-200">Emergency Services</a>
+                <span class="text-gray-600">|</span>
+                <a href="https://www.jnu.ac.in/sites/default/files/Holidays2025.pdf"
+                    class="hover:text-white hover:underline transition duration-200">List of Holidays</a>
+            </div>
+
+            <form action="https://www.jnu.ac.in/search/node" method="get" class="flex items-center">
+                <input type="text" name="keys" placeholder="Search"
+                    class="px-2 py-1 text-gray-900 rounded-l-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm">
+                <button type="submit"
+                    class="bg-blue-600 text-white px-3 py-1 rounded-r-md hover:bg-blue-700 transition duration-200">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                    </svg>
+                </button>
+            </form>
+
+
+            <div class="flex items-center space-x-4">
+                <div class="flex space-x-2">
+                    <a href="https://www.jnu.ac.in/emergency#block-bannerbelowheader"
+                        class="hover:text-white hover:underline transition duration-200">Skip to main content</a>
+                    <span class="text-gray-600">|</span>
+                    <a href="https://www.jnu.ac.in/content/accessibility-statement"
+                        class="hover:text-white hover:underline transition duration-200">Accessibility Statement</a>
+                    <span class="text-gray-600">|</span>
+                    <a href="https://www.jnu.ac.in/content/screen-reader"
+                        class="hover:text-white hover:underline transition duration-200">Screen Reader</a>
+                </div>
+                <div class="flex items-center space-x-1">
+                    <button
+                        class="text-gray-300 hover:text-white text-xs font-bold px-1 py-0.5 rounded-sm hover:bg-gray-700 transition duration-200"
+                        onclick="changeFontSize(-1)">A-</button>
+                    <button
+                        class="text-gray-300 hover:text-white text-sm font-bold px-1 py-0.5 rounded-sm hover:bg-gray-700 transition duration-200"
+                        onclick="changeFontSize(0)">A</button>
+                    <button
+                        class="text-gray-300 hover:text-white text-base font-bold px-1 py-0.5 rounded-sm hover:bg-gray-700 transition duration-200"
+                        onclick="changeFontSize(1)">A+</button>
+                </div>
+                <div class="flex space-x-1">
+                    <button
+                        class="w-4 h-4 rounded-full bg-red-500 border border-gray-600 hover:border-white transition duration-200"
+                        onclick="changeContrast('red')"></button>
+                    <button
+                        class="w-4 h-4 rounded-full bg-green-500 border border-gray-600 hover:border-white transition duration-200"
+                        onclick="changeContrast('green')"></button>
+                    <button
+                        class="w-4 h-4 rounded-full bg-blue-500 border border-gray-600 hover:border-white transition duration-200"
+                        onclick="changeContrast('blue')"></button>
+                </div>
+                <span class="text-gray-600">|</span>
+                <a href="https://www.jnu.ac.in/hi"
+                    class="hover:text-white hover:underline transition duration-200">हिंदी</a>
+                <span class="text-gray-600">|</span>
+                <a href="https://www.jnu.ac.in/main/"
+                    class="hover:text-white hover:underline transition duration-200">English</a>
+            </div>
+        </div>
+    </div>
+
+    <header class="bg-white shadow-md py-4 md:sticky md:top-0 z-50">
+        <nav class="container mx-auto flex justify-between items-center px-4">
+            <a href="index.html"
+                class="flex items-center space-x-3 rounded-md p-2 hover:bg-blue-50 transition duration-300">
+                <img src="Images/JNU_LOGO.jpg" alt="JNU Logo" class="h-20 w-auto">
+                <div class="text-left">
+                    <p class="text-lg font-semibold text-blue-800 leading-tight">Atal Bihari Vajpayee School of
+                        Management and Entrepreneurship</p>
+                    <p class="text-sm text-gray-600 leading-tight">Jawaharlal Nehru University</p>
+                    <p class="text-sm text-gray-600 leading-tight">New Delhi, India</p>
+                </div>
+            </a>
+            <div class="hidden md:flex space-x-6">
+                <div class="relative group">
+                    <button
+                        class="text-gray-700 hover:text-blue-600 font-medium rounded-md p-2 hover:bg-gray-100 transition duration-300 dropdown-toggle">
+                        ABVSME
+                        <svg class="inline-block w-4 h-4 ml-1 -mt-1 transform group-hover:rotate-180 transition-transform duration-200"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <div
+                        class="dropdown-menu absolute hidden group-hover:block bg-white shadow-lg rounded-md py-2 w-48 z-50">
+                        <a href="about.html"
+                            class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">About Us</a>
+                        <div class="relative group">
+                            <button
+                                class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600 focus:outline-none nested-dropdown-toggle">
+                                <svg class="inline-block w-4 h-4 mr-1 -mt-1" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 19l-7-7 7-7"></path>
+                                </svg>
+                                Admission
+                            </button>
+                            <div class="nested-dropdown-menu">
+                                <a href="Mba-admission.html"
+                                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">MBA
+                                </a>
+                                <a href="Phd-admission.html"
+                                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">PhD
+                                </a>
+                            </div>
+                        </div>
+                        <a href="fee-structure.html"
+                            class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Fee
+                            Structure</a>
+                        <a href="pedagogy.html"
+                            class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Pedagogy</a>
+                    </div>
+                </div>
+
+                <div class="relative group">
+                    <button
+                        class="text-gray-700 hover:text-blue-600 font-medium rounded-md p-2 hover:bg-gray-100 transition duration-300 dropdown-toggle">
+                        Programs
+                        <svg class="inline-block w-4 h-4 ml-1 -mt-1 transform group-hover:rotate-180 transition-transform duration-200"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <div
+                        class="dropdown-menu absolute hidden group-hover:block bg-white shadow-lg rounded-md py-2 w-40 z-50">
+                        <a href="mba-courses.html"
+                            class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">MBA</a>
+                        <a href="Diploma.html"
+                            class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">DIPLOMA</a>
+                        <a href="Phd.html"
+                            class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">PhD</a>
+                    </div>
+                </div>
+
+                <div class="relative group">
+                    <button
+                        class="text-gray-700 hover:text-blue-600 font-medium rounded-md p-2 hover:bg-gray-100 transition duration-300 dropdown-toggle">
+                        Faculty
+                        <svg class="inline-block w-4 h-4 ml-1 -mt-1 transform group-hover:rotate-180 transition-transform duration-200"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <div
+                        class="dropdown-menu absolute hidden group-hover:block bg-white shadow-lg rounded-md py-2 w-48 z-50">
+                        <a href="dean.html"
+                            class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Dean</a>
+                        <a href="https://www.jnu.ac.in/abvsme_faculty"
+                            class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Faculty</a>
+                        <a href="concurrent-faculty.html"
+                            class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Concurrent
+                            Faculty</a>
+                        <a href="Associated Faculty.html"
+                            class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Associated
+                            Faculty</a>
+                        <a href="visiting-faculty.html"
+                            class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Visiting
+                            Faculty</a>
+                    </div>
+                </div>
+
+                <div class="relative group">
+                    <button
+                        class="text-gray-700 hover:text-blue-600 font-medium rounded-md p-2 hover:bg-gray-100 transition duration-300 dropdown-toggle">
+                        People
+                        <svg class="inline-block w-4 h-4 ml-1 -mt-1 transform group-hover:rotate-180 transition-transform duration-200"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <div
+                        class="dropdown-menu absolute hidden group-hover:block bg-white shadow-lg rounded-md py-2 w-48 z-50">
+                        <a href="mba-students.html"
+                            class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">MBA Students</a>
+                        <a href="Phdstudents.html"
+                            class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">PhD Students</a>
+                        <a href="Officestaff.html"
+                            class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Office Staff</a>
+                    </div>
+                </div>
+
+                <a href="research.html"
+                    class="text-gray-700 font-medium rounded-md p-2 hover:bg-gray-100 hover:text-blue-600 transition duration-300">Research</a>
+                <a href="Placements.html"
+                    class="text-gray-700 font-medium rounded-md p-2 hover:bg-gray-100 hover:text-blue-600 transition duration-300">Placements</a>
+                <a href="News&Events.html"
+                    class="text-gray-700 font-medium rounded-md p-2 hover:bg-gray-100 hover:text-blue-600 transition duration-300">News
+                    & Events</a>
+
+                <div class="relative group">
+                    <button
+                        class="text-gray-700 hover:text-blue-600 font-medium rounded-md p-2 hover:bg-gray-100 transition duration-300 dropdown-toggle">
+                        Student
+                        <svg class="inline-block w-4 h-4 ml-1 -mt-1 transform group-hover:rotate-180 transition-transform duration-200"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <div
+                        class="dropdown-menu absolute hidden group-hover:block bg-white shadow-lg rounded-md py-2 w-40 z-50">
+                        <a href="Student-Achievements.html"
+                            class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Student
+                            Achievements</a>
+                        <a href="clubs.html"
+                            class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Student
+                            Clubs</a>
+                        <div class="relative group">
+                            <button
+                                class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600 focus:outline-none nested-dropdown-toggle">
+                                <svg class="inline-block w-4 h-4 mr-1 -mt-1" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 19l-7-7 7-7"></path>
+                                </svg>
+                                Library
+                            </button>
+                            <div class="nested-dropdown-menu">
+                                <a href="http://lib.jnu.ac.in/"
+                                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Library
+                                    Home Page</a>
+                                <a href="https://ezproxy.jnu.ac.in/login"
+                                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Remote
+                                    Access</a>
+                                <a href="http://jnucatalogue.jnu.ac.in:8000/"
+                                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Online
+                                    Catalogue (Internet)</a>
+                                <a href="http://jnuonlinecatlog.jnu.ac.in:8000/cgi-bin/gw/chameleon/"
+                                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Online
+                                    Catalogue (Intranet)</a>
+                                <a href="http://lib.jnu.ac.in/Onilne_Databases"
+                                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Online
+                                    Databases</a>
+                                <a href="http://lib.jnu.ac.in/online_journals"
+                                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">E-Journals</a>
+                                <a href="http://lib.jnu.ac.in/e-newspapers"
+                                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">E-Newspapers</a>
+                                <a href="http://lib.jnu.ac.in/e-books"
+                                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">E-Books</a>
+                                <a href="https://jnu.irins.org/"
+                                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">JNU
+                                    IRINS - Faculty Profile</a>
+                                <a href="https://shodhganga.inflibnet.ac.in/"
+                                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Shodhganga</a>
+                                <a href="https://shodh.inflibnet.ac.in/"
+                                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Shodhgangotri</a>
+                                <a href="http://lib.jnu.ac.in/Single_Window_Search"
+                                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Single
+                                    window search</a>
+                            </div>
+                        </div>
+                        <a href="https://www.jnu.ac.in/hostel"
+                            class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Hostel</a>
+                    </div>
+                </div>
+
+                <div class="relative group">
+                    <button
+                        class="text-gray-700 hover:text-blue-600 font-medium rounded-md p-2 hover:bg-gray-100 transition duration-300 dropdown-toggle">
+                        More
+                        <svg class="inline-block w-4 h-4 ml-1 -mt-1 transform group-hover:rotate-180 transition-transform duration-200"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <div
+                        class="dropdown-menu absolute hidden group-hover:block bg-white shadow-lg rounded-md py-2 w-40 z-50">
+                        <a href="newsletter.html"
+                            class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Newsletter</a>
+                        <a href="gallery.html"
+                            class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Gallery</a>
+                    </div>
+                </div>
+
+                <a href="Contact_Us.html"
+                    class="text-gray-700 font-medium rounded-md p-2 hover:bg-gray-100 hover:text-blue-600 transition duration-300">Contact
+                    us</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg py-2 mt-2">
+            <div class="relative">
+                <button id="mobile-about-button"
+                    class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600 focus:outline-none">
+                    ABVSME
+                    <svg class="inline-block w-4 h-4 ml-1 -mt-1 transform transition-transform duration-200" fill="none"
+                        stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                <div id="mobile-about-menu" class="hidden bg-gray-50 py-2">
+                    <a href="about.html"
+                        class="block px-8 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">About Us</a>
+                    <div class="relative">
+                        <button id="mobile-admission-button"
+                            class="block w-full text-left px-8 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600 focus:outline-none">
+                            Admission
+                            <svg class="inline-block w-4 h-4 ml-1 -mt-1 transform transition-transform duration-200"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                                </path>
+                            </svg>
+                        </button>
+                        <div id="mobile-admission-menu" class="hidden bg-gray-100 py-2">
+                            <a href="Mba-admission.html"
+                                class="block px-12 py-2 text-gray-700 hover:bg-gray-200 hover:text-blue-600">MBA
+                            </a>
+                            <a href="Phd-admission.html"
+                                class="block px-12 py-2 text-gray-700 hover:bg-gray-200 hover:text-blue-600">PhD
+                            </a>
+                        </div>
+                    </div>
+                    <a href="fee-structure.html"
+                        class="block px-8 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Fee Structure</a>
+                    <a href="pedagogy.html"
+                        class="block px-8 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Pedagogy</a>
+                </div>
+            </div>
+
+            <div class="relative">
+                <button id="mobile-programs-button"
+                    class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600 focus:outline-none">
+                    Programs
+                    <svg class="inline-block w-4 h-4 ml-1 -mt-1 transform transition-transform duration-200" fill="none"
+                        stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                <div id="mobile-programs-menu" class="hidden bg-gray-50 py-2">
+                    <a href="mba-courses.html"
+                        class="block px-8 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">MBA</a>
+                    <a href="Diploma.html"
+                        class="block px-8 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">DIPLOMA</a>
+                    <a href="Phd.html"
+                        class="block px-8 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">PhD</a>
+                </div>
+            </div>
+
+            <div class="relative">
+                <button id="mobile-faculty-button"
+                    class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600 focus:outline-none">
+                    Faculty
+                    <svg class="inline-block w-4 h-4 ml-1 -mt-1 transform transition-transform duration-200" fill="none"
+                        stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                <div id="mobile-faculty-menu" class="hidden bg-gray-50 py-2">
+                    <a href="dean.html"
+                        class="block px-8 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Dean</a>
+                    <a href="https://www.jnu.ac.in/abvsme_faculty"
+                        class="block px-8 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Faculty</a>
+                    <a href="concurrent-faculty.html"
+                        class="block px-8 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Concurrent
+                        Faculty</a>
+                    <a href="Associated Faculty.html"
+                        class="block px-8 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Associated
+                        Faculty</a>
+                    <a href="visiting-faculty.html"
+                        class="block px-8 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Visiting Faculty</a>
+                </div>
+            </div>
+
+            <div class="relative">
+                <button id="mobile-people-button"
+                    class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600 focus:outline-none">
+                    People
+                    <svg class="inline-block w-4 h-4 ml-1 -mt-1 transform transition-transform duration-200" fill="none"
+                        stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                <div id="mobile-people-menu" class="hidden bg-gray-50 py-2">
+                    <a href="mba-students.html"
+                        class="block px-8 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">MBA Students</a>
+                    <a href="Phdstudents.html"
+                        class="block px-8 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">PhD Students</a>
+                    <a href="Officestaff.html"
+                        class="block px-8 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Office Staff</a>
+                </div>
+            </div>
+
+            <a href="research.html"
+                class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Research</a>
+            <a href="Placements.html"
+                class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Placements</a>
+            <a href="News&Events.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">News
+                & Events</a>
+
+            <div class="relative">
+                <button id="mobile-student-button"
+                    class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600 focus:outline-none">
+                    Student
+                    <svg class="inline-block w-4 h-4 ml-1 -mt-1 transform transition-transform duration-200" fill="none"
+                        stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                <div id="mobile-student-menu" class="hidden bg-gray-50 py-2">
+                    <a href="Student-Achievements.html"
+                        class="block px-8 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Student
+                        Achievements</a>
+                    <a href="clubs.html"
+                        class="block px-8 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Student Clubs</a>
+                    <div class="relative">
+                        <button id="mobile-library-button"
+                            class="block w-full text-left px-8 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600 focus:outline-none">
+                            Library
+                            <svg class="inline-block w-4 h-4 ml-1 -mt-1 transform transition-transform duration-200"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                                </path>
+                            </svg>
+                        </button>
+                        <div id="mobile-library-menu" class="hidden bg-gray-100 py-2">
+                            <a href="http://lib.jnu.ac.in/"
+                                class="block px-12 py-2 text-gray-700 hover:bg-gray-200 hover:text-blue-600">Library
+                                Home Page</a>
+                            <a href="https://ezproxy.jnu.ac.in/login"
+                                class="block px-12 py-2 text-gray-700 hover:bg-gray-200 hover:text-blue-600">Remote
+                                Access</a>
+                            <a href="http://jnucatalogue.jnu.ac.in:8000/"
+                                class="block px-12 py-2 text-gray-700 hover:bg-gray-200 hover:text-blue-600">Online
+                                Catalogue (Internet)</a>
+                            <a href="http://jnuonlinecatlog.jnu.ac.in:8000/cgi-bin/gw/chameleon/"
+                                class="block px-12 py-2 text-gray-700 hover:bg-gray-200 hover:text-blue-600">Online
+                                Catalogue (Intranet)</a>
+                            <a href="http://lib.jnu.ac.in/Onilne_Databases"
+                                class="block px-12 py-2 text-gray-700 hover:bg-gray-200 hover:text-blue-600">Online
+                                Databases</a>
+                            <a href="http://lib.jnu.ac.in/online_journals"
+                                class="block px-12 py-2 text-gray-700 hover:bg-gray-200 hover:text-blue-600">E-Journals</a>
+                            <a href="http://lib.jnu.ac.in/e-newspapers"
+                                class="block px-12 py-2 text-gray-700 hover:bg-gray-200 hover:text-blue-600">E-Newspapers</a>
+                            <a href="http://lib.jnu.ac.in/e-books"
+                                class="block px-12 py-2 text-gray-700 hover:bg-gray-200 hover:text-blue-600">E-Books</a>
+                            <a href="https://jnu.irins.org/"
+                                class="block px-12 py-2 text-gray-700 hover:bg-gray-200 hover:text-blue-600">JNU IRINS -
+                                Faculty Profile</a>
+                            <a href="https://shodhganga.inflibnet.ac.in/"
+                                class="block px-12 py-2 text-gray-700 hover:bg-gray-200 hover:text-blue-600">Shodhganga</a>
+                            <a href="https://shodh.inflibnet.ac.in/"
+                                class="block px-12 py-2 text-gray-700 hover:bg-gray-200 hover:text-blue-600">Shodhgangotri</a>
+                            <a href="http://lib.jnu.ac.in/Single_Window_Search"
+                                class="block px-12 py-2 text-gray-700 hover:bg-gray-200 hover:text-blue-600">Single
+                                window search</a>
+                        </div>
+                    </div>
+                    <a href="https://www.jnu.ac.in/hostel"
+                        class="block px-8 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Hostel</a>
+                </div>
+            </div>
+
+            <div class="relative">
+                <button id="mobile-more-button"
+                    class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600 focus:outline-none">
+                    More
+                    <svg class="inline-block w-4 h-4 ml-1 -mt-1 transform transition-transform duration-200" fill="none"
+                        stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                <div id="mobile-more-menu" class="hidden bg-gray-50 py-2">
+                    <a href="Newsletter.html"
+                        class="block px-8 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Newsletter</a>
+                    <a href="gallery.html"
+                        class="block px-8 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Gallery</a>
+                </div>
+            </div>
+
+            <a href="Contact_Us.html"
+                class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Contact us</a>
+        </div>
+    </header>
+
+    <main class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-blue-800 mb-12 text-center">Contact us</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 bg-white p-8 rounded-lg shadow-lg">
+                <div class="space-y-8">
+                    <div>
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-4 border-b pb-2">Contact Details</h3>
+                        <div class="text-gray-700 space-y-2">
+                            <p class="font-bold">Prof. Heeraman Tiwari</p>
+                            <p>Professor & Dean</p>
+                            <p>Atal Bihari Vajpayee School of Management and Entrepreneurship (ABVSM&E)</p>
+                            <p>Jawaharlal Nehru University</p>
+                            <p>New Delhi-110067</p>
+                            <p><span class="font-semibold">Tel:</span> +91-11-2674 1228 / 2673 8841</p>
+                            <p><span class="font-semibold">Email:</span></p>
+                            <ul class="list-disc list-inside pl-4 text-blue-600">
+                                <li><a href="mailto:dean.abvsme@mail.jnu.ac.in"
+                                        class="hover:underline">dean.abvsme@mail.jnu.ac.in</a></li>
+                                <li><a href="mailto:htiwari@mail.jnu.ac.in"
+                                        class="hover:underline">htiwari@mail.jnu.ac.in</a></li>
+                                <li><a href="mailto:heeraman98@gmail.com"
+                                        class="hover:underline">heeraman98@gmail.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="mb-8">
+                        <h3 class="text-xl font-semibold text-gray-700 mb-4 flex items-center">
+                            <svg class="w-6 h-6 mr-3 text-blue-600" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
+                                </path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                            How to Reach Us
+                        </h3>
+                        <div class="space-y-4 pl-9">
+                            <div>
+                                <h4 class="font-semibold text-gray-600">Nearest Metro Station</h4>
+                                <ul class="list-disc list-inside text-gray-600">
+                                    <li>Munirka (Magenta Line)</li>
+                                    <li>R.K. Puram (Magenta Line)</li>
+                                    <li>Vasant Vihar (Magenta Line)</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-600">Nearest Bus Stop</h4>
+                                <ul class="list-disc list-inside text-gray-600">
+                                    <li>JNU Campus, Munirka (Drops at JNU North Gate)</li>
+                                    <li>JNU Administrative Block (Drops near JNU Administrative Block) (Bus No. 615)
+                                    </li>
+                                    <li>Central School, JNU Campus Road, Saraswatipuram</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-600 mb-2">From Indira Gandhi International Airport
+                                    (T3)</h4>
+
+                                <ul class="list-disc list-inside text-gray-600">
+                                    <li>Via Rao TulaRam Marg (8.7 Km),
+                                        <a href="https://www.google.com/maps/dir/Indira+Gandhi+International+Airport/Jawaharlal+Nehru+University,+New+Delhi,+Delhi"
+                                            target="_blank" rel="noopener noreferrer"
+                                            class="inline-flex items-center space-x-2 bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-700 transition duration-300">
+                                            <i class="fas fa-route"></i>
+                                            <span>Get Directions</span>
+                                        </a>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h4 class="font-semibold text-gray-600 mb-2">From New Delhi Railway Staion</h4>
+
+                                <ul class="list-disc list-inside text-gray-600">
+                                    <li> via Janpath Road (17 Km),
+                                        <a href="https://www.google.com/maps/dir/New+Delhi+railway+station,+J6RC%2BW59,+Foot+Over+Brg,+Railway+Colony,+Ajmeri+Gate,+Delhi,+110006/Atal+Bihari+Vajpayee+School+of+Management+%26+Entrepreneurship+(ABVSME)+JNU,+G5P6%2BVQV,+JNU+Main+Campus,+near+UGC-HRDC,+New+Delhi"
+                                            target="_blank" rel="noopener noreferrer"
+                                            class="inline-flex items-center space-x-2 bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-700 transition duration-300">
+                                            <i class="fas fa-route"></i>
+                                            <span>Get Directions</span>
+                                        </a>
+                                </ul>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-4 border-b pb-2">Postal Address</h3>
+                        <div class="text-gray-700 space-y-2">
+                            <p>Atal Bihari Vajpayee School of Management and Entrepreneurship (ABVSM&E)</p>
+                            <p>Birsa Munda Marg, Near UGC-HRDC, JNU New Campus,</p>
+                            <p>Jawaharlal Nehru University, New Delhi - 110067</p>
+                            <p>Delhi, INDIA</p>
+                            <p><span class="font-semibold">Web:</span> <a href="http://www.jnu.ac.in/abvsme"
+                                    class="text-blue-600 hover:underline">http://www.jnu.ac.in/abvsme</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3505.0826389313024!2d77.1619279!3d28.537235700000007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1d37e5cd68eb%3A0x834a9308ce15c37d!2sAtal%20Bihari%20Vajpayee%20School%20of%20Management%20%26%20Entrepreneurship%20(ABVSME)%20JNU!5e0!3m2!1sen!2sin!4v1755630929234!5m2!1sen!2sin"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        class="w-full rounded-lg shadow-sm" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <div class="fixed top-1/2 right-0 transform -translate-y-1/2 z-50">
+        <div class="flex flex-col space-y-2">
+            <a href="https://in.linkedin.com/company/abvsme" target="_blank"
+                class="bg-blue-700 text-white w-12 h-12 rounded-full flex items-center justify-center hover:bg-blue-800 transition transform hover:scale-110 duration-300">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://www.facebook.com/ABVSME/" target="_blank"
+                class="bg-blue-600 text-white w-12 h-12 rounded-full flex items-center justify-center hover:bg-blue-700 transition transform hover:scale-110 duration-300">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/abvsme/?hl=en" target="_blank"
+                class="bg-pink-500 text-white w-12 h-12 rounded-full flex items-center justify-center hover:bg-pink-600 transition transform hover:scale-110 duration-300">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://x.com/abvsme_jnu" target="_blank"
+                class="bg-gray-800 text-white w-12 h-12 rounded-full flex items-center justify-center hover:bg-black transition transform hover:scale-110 duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 16 16">
+                    <path
+                        d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.6.75ZM11.49 13.5h1.432L4.162 2.16h-1.55l8.88 11.34Z" />
+                </svg>
+
+            </a>
+            <a href="mailto:info@abvsme.jnu.ac.in"
+                class="bg-gray-600 text-white w-12 h-12 rounded-full flex items-center justify-center hover:bg-gray-700 transition transform hover:scale-110 duration-300">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a href="tel:+91-11-2674-1228"
+                class="bg-green-500 text-white w-12 h-12 rounded-full flex items-center justify-center hover:bg-green-600 transition transform hover:scale-110 duration-300">
+                <i class="fas fa-phone-alt"></i>
+            </a>
+        </div>
+    </div>
+
+    <button id="scrollToTopBtn"
+        class="hidden fixed bottom-5 right-5 bg-blue-600 text-white rounded-full p-3 shadow-lg hover:bg-blue-700 transition duration-300 z-50">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+        </svg>
+    </button>
+
+    <footer class="bg-gray-900 text-gray-300">
+        <div class="container mx-auto px-4 py-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center md:text-left">
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-4">About ABVSME</h3>
+                    <p class="text-sm">
+                        The Atal Bihari Vajpayee School of Management and Entrepreneurship in JNU will carve out a niche
+                        for itself and will provide opportunities to our youth to get quality education and training.
+                    </p>
+                    <p class="mt-4 text-sm">
+                        Jawaharlal Nehru University, <br>New Delhi - 110067, India
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-4">Quick Links</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="about.html" class="hover:text-white transition duration-300">About Us</a></li>
+                        <li><a href="Mba-admission.html" class="hover:text-white transition duration-300">Admission</a>
+                        </li>
+                        <li><a href="mba-courses.html" class="hover:text-white transition duration-300">MBA</a></li>
+                        <li><a href="Placements.html" class="hover:text-white transition duration-300">Placements</a>
+                        </li>
+                        <li><a href="https://www.jnu.ac.in/abvsme_faculty"
+                                class="hover:text-white transition duration-300">Faculty</a></li>
+                        <li><a href="https://www.jnu.ac.in/sitemap"
+                                class="hover:text-white transition duration-300">Site Map</a></li>
+                        <li><a href="https://www.jnu.ac.in/feedback"
+                                class="hover:text-white transition duration-300">Feedback</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-4">Contact us</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="mailto:info@abvsme.jnu.ac.in"
+                                class="hover:text-white transition duration-300">info@abvsme.jnu.ac.in</a></li>
+                        <li><a href="tel:+91-11-2674-2676"
+                                class="hover:text-white transition duration-300">+91-11-2674-2676</a></li>
+                    </ul>
+                    <div class="flex justify-center md:justify-start space-x-4 mt-4">
+                        <a href="https://www.facebook.com/ABVSME" class="text-gray-400 hover:text-white text-xl"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://x.com/abvsme_jnu" class="text-gray-400 hover:text-white text-xl"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="https://in.linkedin.com/company/abvsme"
+                            class="text-gray-400 hover:text-white text-xl"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="mailto:info@abvsme.jnu.ac.in" class="text-gray-400 hover:text-white text-xl"><i
+                                class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <a href="https://www.jnu.ac.in/" target="_blank" rel="noopener noreferrer"
+                        class="flex items-center justify-center md:justify-start space-x-3">
+                        <img src="Images/JNU_LOGO.jpg" alt="JNU Logo" class="h-12 w-auto bg-white p-1 rounded-md">
+                        <h3 class="text-lg font-semibold text-white">Jawaharlal Nehru University</h3>
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-6 text-center text-sm">
+                <p>© Jawaharlal Nehru University. New Mehrauli Road, New Delhi 110067. All rights reserved.</p>
+                <p class="mt-2">Last reviewed and updated on 2025-08-06</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

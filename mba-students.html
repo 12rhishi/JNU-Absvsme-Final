@@ -1,0 +1,1256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Images/JNU_LOGO.jpg" type="image/x-icon">
+    <title>ABVSME | JNU </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-gray-50 text-gray-800 ">
+
+    <div id="top-bar"
+        class="bg-gray-900 text-gray-300 text-xs py-2 hidden md:block transition-all duration-300 ease-in-out">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <div class="flex space-x-3">
+                <a href="https://www.jnu.ac.in/main/"
+                    class="hover:text-white hover:underline transition duration-200">JNU</a>
+                <span class="text-gray-600">|</span>
+                <a href="https://www.jnu.ac.in/Right-to-Information"
+                    class="hover:text-white hover:underline transition duration-200">RTI</a>
+                <span class="text-gray-600">|</span>
+                <a href="https://www.jnu.ac.in/sites/default/files/JNUTelDirectory.pdf"
+                    class="hover:text-white hover:underline transition duration-200">Directory</a>
+                <span class="text-gray-600">|</span>
+                <a href="https://www.jnu.ac.in/contactus"
+                    class="hover:text-white hover:underline transition duration-200">Contact us</a>
+                <span class="text-gray-600">|</span>
+                <a href="https://www.jnu.ac.in/emergency"
+                    class="hover:text-white hover:underline transition duration-200">Emergency Services</a>
+                <span class="text-gray-600">|</span>
+                <a href="https://www.jnu.ac.in/sites/default/files/Holidays2025.pdf"
+                    class="hover:text-white hover:underline transition duration-200">List of Holidays</a>
+            </div>
+
+            <form action="https://www.jnu.ac.in/search/node" method="get" class="flex items-center">
+                <input type="text" name="keys" placeholder="Search"
+                    class="px-2 py-1 text-gray-900 rounded-l-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm">
+                <button type="submit"
+                    class="bg-blue-600 text-white px-3 py-1 rounded-r-md hover:bg-blue-700 transition duration-200">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                    </svg>
+                </button>
+            </form>
+
+            <div class="flex items-center space-x-4">
+                <div class="flex space-x-2">
+                    <a href="https://www.jnu.ac.in/emergency#block-bannerbelowheader"
+                        class="hover:text-white hover:underline transition duration-200">Skip to main content</a>
+                    <span class="text-gray-600">|</span>
+                    <a href="https://www.jnu.ac.in/content/accessibility-statement"
+                        class="hover:text-white hover:underline transition duration-200">Accessibility Statement</a>
+                    <span class="text-gray-600">|</span>
+                    <a href="https://www.jnu.ac.in/content/screen-reader"
+                        class="hover:text-white hover:underline transition duration-200">Screen Reader</a>
+                </div>
+                <div class="flex items-center space-x-1">
+                    <button
+                        class="text-gray-300 hover:text-white text-xs font-bold px-1 py-0.5 rounded-sm hover:bg-gray-700 transition duration-200"
+                        onclick="changeFontSize(-1)">A-</button>
+                    <button
+                        class="text-gray-300 hover:text-white text-sm font-bold px-1 py-0.5 rounded-sm hover:bg-gray-700 transition duration-200"
+                        onclick="changeFontSize(0)">A</button>
+                    <button
+                        class="text-gray-300 hover:text-white text-base font-bold px-1 py-0.5 rounded-sm hover:bg-gray-700 transition duration-200"
+                        onclick="changeFontSize(1)">A+</button>
+                </div>
+                <div class="flex space-x-1">
+                    <button
+                        class="w-4 h-4 rounded-full bg-red-500 border border-gray-600 hover:border-white transition duration-200"
+                        onclick="changeContrast('red')"></button>
+                    <button
+                        class="w-4 h-4 rounded-full bg-green-500 border border-gray-600 hover:border-white transition duration-200"
+                        onclick="changeContrast('green')"></button>
+                    <button
+                        class="w-4 h-4 rounded-full bg-blue-500 border border-gray-600 hover:border-white transition duration-200"
+                        onclick="changeContrast('blue')"></button>
+                </div>
+                <span class="text-gray-600">|</span>
+                <a href="https://www.jnu.ac.in/hi"
+                    class="hover:text-white hover:underline transition duration-200">हिंदी</a>
+                <span class="text-gray-600">|</span>
+                <a href="https://www.jnu.ac.in/main/"
+                    class="hover:text-white hover:underline transition duration-200">English</a>
+            </div>
+        </div>
+    </div>
+
+    <header class="bg-white shadow-md py-4 md:sticky md:top-0 z-50">
+        <nav class="container mx-auto flex justify-between items-center px-4">
+            <a href="index.html"
+                class="flex items-center space-x-3 rounded-md p-2 hover:bg-blue-50 transition duration-300">
+                <img src="Images/JNU_LOGO.jpg" alt="JNU Logo" class="h-20 w-auto">
+                <div class="text-left">
+                    <p class="text-lg font-semibold text-blue-800 leading-tight">Atal Bihari Vajpayee School of
+                        Management and Entrepreneurship</p>
+                    <p class="text-sm text-gray-600 leading-tight">Jawaharlal Nehru University</p>
+                    <p class="text-sm text-gray-600 leading-tight">New Delhi, India</p>
+                </div>
+            </a>
+            <div class="hidden md:flex space-x-6">
+                <div class="relative group">
+                    <button
+                        class="text-gray-700 hover:text-blue-600 font-medium rounded-md p-2 hover:bg-gray-100 transition duration-300 dropdown-toggle">
+                        ABVSME
+                        <svg class="inline-block w-4 h-4 ml-1 -mt-1 transform group-hover:rotate-180 transition-transform duration-200"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <div
+                        class="dropdown-menu absolute hidden group-hover:block bg-white shadow-lg rounded-md py-2 w-48 z-50">
+                        <a href="about.html"
+                            class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">About Us</a>
+                        <div class="relative group">
+                            <button
+                                class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600 focus:outline-none nested-dropdown-toggle">
+                                <svg class="inline-block w-4 h-4 mr-1 -mt-1" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 19l-7-7 7-7"></path>
+                                </svg>
+                                Admission
+                            </button>
+                            <div class="nested-dropdown-menu">
+                                <a href="Mba-admission.html"
+                                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">MBA </a>
+                                <a href="Phd-admission.html"
+                                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">PhD </a>
+                            </div>
+                        </div>
+                        <a href="fee-structure.html"
+                            class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Fee
+                            Structure</a>
+                        <a href="pedagogy.html"
+                            class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Pedagogy</a>
+                    </div>
+                </div>
+
+                <div class="relative group">
+                    <button
+                        class="text-gray-700 hover:text-blue-600 font-medium rounded-md p-2 hover:bg-gray-100 transition duration-300 dropdown-toggle">
+                        Programs
+                        <svg class="inline-block w-4 h-4 ml-1 -mt-1 transform group-hover:rotate-180 transition-transform duration-200"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <div
+                        class="dropdown-menu absolute hidden group-hover:block bg-white shadow-lg rounded-md py-2 w-40 z-50">
+                        <a href="mba-courses.html"
+                            class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">MBA</a>
+                        <a href="Diploma.html"
+                            class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">DIPLOMA</a>
+                        <a href="Phd.html"
+                            class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">PhD</a>
+                    </div>
+                </div>
+
+                <div class="relative group">
+                    <button
+                        class="text-gray-700 hover:text-blue-600 font-medium rounded-md p-2 hover:bg-gray-100 transition duration-300 dropdown-toggle">
+                        Faculty
+                        <svg class="inline-block w-4 h-4 ml-1 -mt-1 transform group-hover:rotate-180 transition-transform duration-200"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <div
+                        class="dropdown-menu absolute hidden group-hover:block bg-white shadow-lg rounded-md py-2 w-48 z-50">
+                        <a href="dean.html"
+                            class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Dean</a>
+                        <a href="https://www.jnu.ac.in/abvsme_faculty"
+                            class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Faculty</a>
+                        <a href="concurrent-faculty.html"
+                            class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Concurrent
+                            Faculty</a>
+                        <a href="Associated Faculty.html"
+                            class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Associated
+                            Faculty</a>
+                        <a href="visiting-faculty.html"
+                            class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Visiting
+                            Faculty</a>
+                    </div>
+                </div>
+
+                <div class="relative group">
+                    <button
+                        class="text-gray-700 hover:text-blue-600 font-medium rounded-md p-2 hover:bg-gray-100 transition duration-300 dropdown-toggle">
+                        People
+                        <svg class="inline-block w-4 h-4 ml-1 -mt-1 transform group-hover:rotate-180 transition-transform duration-200"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <div
+                        class="dropdown-menu absolute hidden group-hover:block bg-white shadow-lg rounded-md py-2 w-48 z-50">
+                        <a href="mba-students.html"
+                            class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">MBA Students</a>
+                        <a href="Phdstudents.html"
+                            class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">PhD Students</a>
+                        <a href="Officestaff.html"
+                            class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Office Staff</a>
+                    </div>
+                </div>
+
+                <a href="research.html"
+                    class="text-gray-700 font-medium rounded-md p-2 hover:bg-gray-100 hover:text-blue-600 transition duration-300">Research</a>
+                <a href="Placements.html"
+                    class="text-gray-700 font-medium rounded-md p-2 hover:bg-gray-100 hover:text-blue-600 transition duration-300">Placements</a>
+                <a href="News&Events.html"
+                    class="text-gray-700 font-medium rounded-md p-2 hover:bg-gray-100 hover:text-blue-600 transition duration-300">News
+                    & Events</a>
+
+                <div class="relative group">
+                    <button
+                        class="text-gray-700 hover:text-blue-600 font-medium rounded-md p-2 hover:bg-gray-100 transition duration-300 dropdown-toggle">
+                        Student
+                        <svg class="inline-block w-4 h-4 ml-1 -mt-1 transform group-hover:rotate-180 transition-transform duration-200"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <div
+                        class="dropdown-menu absolute hidden group-hover:block bg-white shadow-lg rounded-md py-2 w-40 z-50">
+                        <a href="Student-Achievements.html"
+                            class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Student
+                            Achievements</a>
+                        <a href="clubs.html"
+                            class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Student
+                            Clubs</a>
+                        <div class="relative group">
+                            <button
+                                class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600 focus:outline-none nested-dropdown-toggle">
+                                <svg class="inline-block w-4 h-4 mr-1 -mt-1" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 19l-7-7 7-7"></path>
+                                </svg>
+                                Library
+                            </button>
+                            <div class="nested-dropdown-menu">
+                                <a href="http://lib.jnu.ac.in/"
+                                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Library
+                                    Home Page</a>
+                                <a href="https://ezproxy.jnu.ac.in/login"
+                                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Remote
+                                    Access</a>
+                                <a href="http://jnucatalogue.jnu.ac.in:8000/"
+                                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Online
+                                    Catalogue (Internet)</a>
+                                <a href="http://jnuonlinecatlog.jnu.ac.in:8000/cgi-bin/gw/chameleon/"
+                                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Online
+                                    Catalogue (Intranet)</a>
+                                <a href="http://lib.jnu.ac.in/Onilne_Databases"
+                                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Online
+                                    Databases</a>
+                                <a href="http://lib.jnu.ac.in/online_journals"
+                                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">E-Journals</a>
+                                <a href="http://lib.jnu.ac.in/e-newspapers"
+                                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">E-Newspapers</a>
+                                <a href="http://lib.jnu.ac.in/e-books"
+                                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">E-Books</a>
+                                <a href="https://jnu.irins.org/"
+                                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">JNU
+                                    IRINS - Faculty Profile</a>
+                                <a href="https://shodhganga.inflibnet.ac.in/"
+                                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Shodhganga</a>
+                                <a href="https://shodh.inflibnet.ac.in/"
+                                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Shodhgangotri</a>
+                                <a href="http://lib.jnu.ac.in/Single_Window_Search"
+                                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Single
+                                    window search</a>
+                            </div>
+                        </div>
+                        <a href="https://www.jnu.ac.in/hostel"
+                            class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Hostel</a>
+                    </div>
+                </div>
+
+                <div class="relative group">
+                    <button
+                        class="text-gray-700 hover:text-blue-600 font-medium rounded-md p-2 hover:bg-gray-100 transition duration-300 dropdown-toggle">
+                        More
+                        <svg class="inline-block w-4 h-4 ml-1 -mt-1 transform group-hover:rotate-180 transition-transform duration-200"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <div
+                        class="dropdown-menu absolute hidden group-hover:block bg-white shadow-lg rounded-md py-2 w-40 z-50">
+                        <a href="Newsletter.html"
+                            class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Newsletter</a>
+                        <a href="gallery.html"
+                            class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Gallery</a>
+                    </div>
+                </div>
+
+                <a href="Contact_Us.html"
+                    class="text-gray-700 font-medium rounded-md p-2 hover:bg-gray-100 hover:text-blue-600 transition duration-300">Contact
+                    us</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg py-2 mt-2">
+            <div class="relative">
+                <button id="mobile-about-button"
+                    class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600 focus:outline-none">
+                    ABVSME
+                    <svg class="inline-block w-4 h-4 ml-1 -mt-1 transform transition-transform duration-200" fill="none"
+                        stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                <div id="mobile-about-menu" class="hidden bg-gray-50 py-2">
+                    <a href="about.html"
+                        class="block px-8 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">About Us</a>
+                    <div class="relative">
+                        <button id="mobile-admission-button"
+                            class="block w-full text-left px-8 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600 focus:outline-none">
+                            Admission
+                            <svg class="inline-block w-4 h-4 ml-1 -mt-1 transform transition-transform duration-200"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                                </path>
+                            </svg>
+                        </button>
+                        <div id="mobile-admission-menu" class="hidden bg-gray-100 py-2">
+                            <a href="Mba-admission.html"
+                                class="block px-12 py-2 text-gray-700 hover:bg-gray-200 hover:text-blue-600">MBA </a>
+                            <a href="Phd-admission.html"
+                                class="block px-12 py-2 text-gray-700 hover:bg-gray-200 hover:text-blue-600">PhD </a>
+                        </div>
+                    </div>
+                    <a href="fee-structure.html"
+                        class="block px-8 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Fee Structure</a>
+                    <a href="pedagogy.html"
+                        class="block px-8 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Pedagogy</a>
+                </div>
+            </div>
+
+            <div class="relative">
+                <button id="mobile-programs-button"
+                    class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600 focus:outline-none">
+                    Programs
+                    <svg class="inline-block w-4 h-4 ml-1 -mt-1 transform transition-transform duration-200" fill="none"
+                        stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                <div id="mobile-programs-menu" class="hidden bg-gray-50 py-2">
+                    <a href="mba-courses.html"
+                        class="block px-8 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">MBA</a>
+                    <a href="Diploma.html"
+                        class="block px-8 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">DIPLOMA</a>
+                    <a href="Phd.html"
+                        class="block px-8 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">PhD</a>
+                </div>
+            </div>
+
+            <div class="relative">
+                <button id="mobile-faculty-button"
+                    class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600 focus:outline-none">
+                    Faculty
+                    <svg class="inline-block w-4 h-4 ml-1 -mt-1 transform transition-transform duration-200" fill="none"
+                        stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                <div id="mobile-faculty-menu" class="hidden bg-gray-50 py-2">
+                    <a href="dean.html"
+                        class="block px-8 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Dean</a>
+                    <a href="https://www.jnu.ac.in/abvsme_faculty"
+                        class="block px-8 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Esteemed Faculty</a>
+                    <a href="concurrent-faculty.html"
+                        class="block px-8 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Concurrent
+                        Faculty</a>
+                    <a href="Associated Faculty.html"
+                        class="block px-8 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Associated
+                        Faculty</a>
+                    <a href="visiting-faculty.html"
+                        class="block px-8 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Visiting Faculty</a>
+                </div>
+            </div>
+
+            <div class="relative">
+                <button id="mobile-people-button"
+                    class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600 focus:outline-none">
+                    People
+                    <svg class="inline-block w-4 h-4 ml-1 -mt-1 transform transition-transform duration-200" fill="none"
+                        stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                <div id="mobile-people-menu" class="hidden bg-gray-50 py-2">
+                    <a href="mba-students.html"
+                        class="block px-8 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">MBA Students</a>
+                    <a href="Phdstudents.html"
+                        class="block px-8 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">PhD Students</a>
+                    <a href="Officestaff.html"
+                        class="block px-8 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Office Staff</a>
+                </div>
+            </div>
+
+            <a href="research.html"
+                class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Research</a>
+            <a href="Placements.html"
+                class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Placements</a>
+            <a href="News&Events.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">News
+                & Events</a>
+
+            <div class="relative">
+                <button id="mobile-student-button"
+                    class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600 focus:outline-none">
+                    Student
+                    <svg class="inline-block w-4 h-4 ml-1 -mt-1 transform transition-transform duration-200" fill="none"
+                        stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                <div id="mobile-student-menu" class="hidden bg-gray-50 py-2">
+                    <a href="Student-Achievements.html"
+                        class="block px-8 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Student
+                        Achievements</a>
+                    <a href="clubs.html"
+                        class="block px-8 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Student Clubs</a>
+                    <div class="relative">
+                        <button id="mobile-library-button"
+                            class="block w-full text-left px-8 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600 focus:outline-none">
+                            Library
+                            <svg class="inline-block w-4 h-4 ml-1 -mt-1 transform transition-transform duration-200"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                                </path>
+                            </svg>
+                        </button>
+                        <div id="mobile-library-menu" class="hidden bg-gray-100 py-2">
+                            <a href="http://lib.jnu.ac.in/"
+                                class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600"
+                                class="block px-12 py-2 text-gray-700 hover:bg-gray-200 hover:text-blue-600">Library
+                                Home Page</a>
+                            <a href="https://ezproxy.jnu.ac.in/login"
+                                class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600"
+                                class="block px-12 py-2 text-gray-700 hover:bg-gray-200 hover:text-blue-600">Remote
+                                Access</a>
+                            <a href="http://jnucatalogue.jnu.ac.in:8000/"
+                                class="block px-12 py-2 text-gray-700 hover:bg-gray-200 hover:text-blue-600">Online
+                                Catalogue (Internet)</a>
+                            <a href="http://jnuonlinecatlog.jnu.ac.in:8000/cgi-bin/gw/chameleon/"
+                                class="block px-12 py-2 text-gray-700 hover:bg-gray-200 hover:text-blue-600">Online
+                                Catalogue (Intranet)</a>
+                            <a href="http://lib.jnu.ac.in/Onilne_Databases"
+                                class="block px-12 py-2 text-gray-700 hover:bg-gray-200 hover:text-blue-600">Online
+                                Databases</a>
+                            <a href="http://lib.jnu.ac.in/online_journals"
+                                class="block px-12 py-2 text-gray-700 hover:bg-gray-200 hover:text-blue-600">E-Journals</a>
+                            <a href="http://lib.jnu.ac.in/e-newspapers"
+                                class="block px-12 py-2 text-gray-700 hover:bg-gray-200 hover:text-blue-600">E-Newspapers</a>
+                            <a href="http://lib.jnu.ac.in/e-books"
+                                class="block px-12 py-2 text-gray-700 hover:bg-gray-200 hover:text-blue-600">E-Books</a>
+                            <a href="https://jnu.irins.org/"
+                                class="block px-12 py-2 text-gray-700 hover:bg-gray-200 hover:text-blue-600">JNU IRINS -
+                                Faculty Profile</a>
+                            <a href="https://shodhganga.inflibnet.ac.in/"
+                                class="block px-12 py-2 text-gray-700 hover:bg-gray-200 hover:text-blue-600">Shodhganga</a>
+                            <a href="https://shodh.inflibnet.ac.in/"
+                                class="block px-12 py-2 text-gray-700 hover:bg-gray-200 hover:text-blue-600">Shodhgangotri</a>
+                            <a href="http://lib.jnu.ac.in/Single_Window_Search"
+                                class="block px-12 py-2 text-gray-700 hover:bg-gray-200 hover:text-blue-600">Single
+                                window search</a>
+                        </div>
+                    </div>
+                    <a href="https://www.jnu.ac.in/hostel"
+                        class="block px-8 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Hostel</a>
+                </div>
+            </div>
+
+            <div class="relative">
+                <button id="mobile-more-button"
+                    class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600 focus:outline-none">
+                    More
+                    <svg class="inline-block w-4 h-4 ml-1 -mt-1 transform transition-transform duration-200" fill="none"
+                        stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                <div id="mobile-more-menu" class="hidden bg-gray-50 py-2">
+                    <a href="Newsletter.html"
+                        class="block px-8 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Newsletter</a>
+                    <a href="gallery.html"
+                        class="block px-8 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Gallery</a>
+                </div>
+            </div>
+
+            <a href="Contact_Us.html"
+                class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600">Contact us</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-12">
+        <!-- Page Title -->
+        <div class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-bold text-blue-800 mb-4">MBA Students</h1>
+            <p class="text-lg text-gray-600">Meet our talented MBA students from ABVSME</p>
+        </div>
+
+        <!-- Batch 2024-26 Section -->
+        <section class="mb-16">
+            <div class="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-6 px-8 rounded-lg shadow-lg mb-8">
+                <h2 class="text-3xl font-bold">Batch 2024-2026</h2>
+                <p class="text-blue-100 mt-2">31 Students</p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+                <div
+                    class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300 flex flex-col h-full">
+                    <div class="h-48 w-full bg-gray-100 flex items-center justify-center overflow-hidden">
+                        <img loading="lazy" src="Images/Batch MBA 2024-26/Abhyarthana Jena.jpeg" alt="Abhyarthana Jena"
+                            class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-4 flex-grow flex flex-col items-center text-center">
+                        <h3 class="font-bold text-lg text-gray-800 mb-3">Abhyarthana Jena</h3>
+                        <button onclick="openStudentModal(0)"
+                            class="mt-auto bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-blue-700 transition duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+                            View Profile
+                        </button>
+                    </div>
+                </div>
+                <div
+                    class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300 flex flex-col h-full">
+                    <div class="h-48 w-full bg-gray-100 flex items-center justify-center overflow-hidden">
+                        <img loading="lazy" src="Images/Batch MBA 2024-26/Ankush Yadav.jpeg" alt="Ankush Yadav"
+                            class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-4 flex-grow flex flex-col items-center text-center">
+                        <h3 class="font-bold text-lg text-gray-800 mb-3">Ankush Yadav</h3>
+                        <button onclick="openStudentModal(1)"
+                            class="mt-auto bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-blue-700 transition duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+                            View Profile
+                        </button>
+                    </div>
+                </div>
+                <div
+                    class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300 flex flex-col h-full">
+                    <div class="h-48 w-full bg-gray-100 flex items-center justify-center overflow-hidden">
+                        <img loading="lazy" src="Images/Batch MBA 2024-26/Vidhi Sharma.jpg" alt="Vidhi Sharma"
+                            class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-4 flex-grow flex flex-col items-center text-center">
+                        <h3 class="font-bold text-lg text-gray-800 mb-3">Vidhi Sharma</h3>
+                        <button onclick="openStudentModal(2)"
+                            class="mt-auto bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-blue-700 transition duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+                            View Profile
+                        </button>
+                    </div>
+                </div>
+                <div
+                    class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300 flex flex-col h-full">
+                    <div class="h-48 w-full bg-gray-100 flex items-center justify-center overflow-hidden">
+                        <img loading="lazy" src="Images/Batch MBA 2024-26/shivangi singh.jpeg" alt="SHIVANGI SINGH"
+                            class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-4 flex-grow flex flex-col items-center text-center">
+                        <h3 class="font-bold text-lg text-gray-800 mb-3">SHIVANGI SINGH</h3>
+                        <button onclick="openStudentModal(3)"
+                            class="mt-auto bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-blue-700 transition duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+                            View Profile
+                        </button>
+                    </div>
+                </div>
+                <div
+                    class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300 flex flex-col h-full">
+                    <div class="h-48 w-full bg-gray-100 flex items-center justify-center overflow-hidden">
+                        <img loading="lazy" src="Images/Batch MBA 2024-26/ananya rastogi.jpg" alt="Ananya rastogi"
+                            class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-4 flex-grow flex flex-col items-center text-center">
+                        <h3 class="font-bold text-lg text-gray-800 mb-3">Ananya rastogi</h3>
+                        <button onclick="openStudentModal(4)"
+                            class="mt-auto bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-blue-700 transition duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+                            View Profile
+                        </button>
+                    </div>
+                </div>
+                <div
+                    class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300 flex flex-col h-full">
+                    <div class="h-48 w-full bg-gray-100 flex items-center justify-center overflow-hidden">
+                        <img loading="lazy" src="Images/Batch MBA 2024-26/Divya Sharma.jpg" alt="Divya Sharma"
+                            class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-4 flex-grow flex flex-col items-center text-center">
+                        <h3 class="font-bold text-lg text-gray-800 mb-3">Divya Sharma</h3>
+                        <button onclick="openStudentModal(5)"
+                            class="mt-auto bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-blue-700 transition duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+                            View Profile
+                        </button>
+                    </div>
+                </div>
+                <div
+                    class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300 flex flex-col h-full">
+                    <div class="h-48 w-full bg-gray-100 flex items-center justify-center overflow-hidden">
+                        <img loading="lazy" src="Images/Batch MBA 2024-26/Yashika Choudhary.jpg" alt="Yashika Choudhary"
+                            class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-4 flex-grow flex flex-col items-center text-center">
+                        <h3 class="font-bold text-lg text-gray-800 mb-3">Yashika Choudhary</h3>
+                        <button onclick="openStudentModal(6)"
+                            class="mt-auto bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-blue-700 transition duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+                            View Profile
+                        </button>
+                    </div>
+                </div>
+                <div
+                    class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300 flex flex-col h-full">
+                    <div class="h-48 w-full bg-gray-100 flex items-center justify-center overflow-hidden">
+                        <img loading="lazy" src="Images/Batch MBA 2024-26/Aviral Pratap Singh Chauhan.jpg"
+                            alt="Aviral Pratap Singh Chauhan" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-4 flex-grow flex flex-col items-center text-center">
+                        <h3 class="font-bold text-lg text-gray-800 mb-3">Aviral Pratap Singh Chauhan</h3>
+                        <button onclick="openStudentModal(7)"
+                            class="mt-auto bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-blue-700 transition duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+                            View Profile
+                        </button>
+                    </div>
+                </div>
+                <div
+                    class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300 flex flex-col h-full">
+                    <div class="h-48 w-full bg-gray-100 flex items-center justify-center overflow-hidden">
+                        <img loading="lazy" src="Images/Batch MBA 2024-26/Keshav Sharma.jpeg" alt="Keshav Sharma"
+                            class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-4 flex-grow flex flex-col items-center text-center">
+                        <h3 class="font-bold text-lg text-gray-800 mb-3">Keshav Sharma</h3>
+                        <button onclick="openStudentModal(8)"
+                            class="mt-auto bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-blue-700 transition duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+                            View Profile
+                        </button>
+                    </div>
+                </div>
+                <div
+                    class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300 flex flex-col h-full">
+                    <div class="h-48 w-full bg-gray-100 flex items-center justify-center overflow-hidden">
+                        <img loading="lazy" src="Images/Batch MBA 2024-26/ritik rawat.jpeg" alt="Ritik Rawat"
+                            class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-4 flex-grow flex flex-col items-center text-center">
+                        <h3 class="font-bold text-lg text-gray-800 mb-3">Ritik Rawat</h3>
+                        <button onclick="openStudentModal(9)"
+                            class="mt-auto bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-blue-700 transition duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+                            View Profile
+                        </button>
+                    </div>
+                </div>
+                <div
+                    class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300 flex flex-col h-full">
+                    <div class="h-48 w-full bg-gray-100 flex items-center justify-center overflow-hidden">
+                        <img loading="lazy" src="Images/Batch MBA 2024-26/Anshul Yadav.jpg" alt="Anshul Yadav"
+                            class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-4 flex-grow flex flex-col items-center text-center">
+                        <h3 class="font-bold text-lg text-gray-800 mb-3">Anshul Yadav</h3>
+                        <button onclick="openStudentModal(10)"
+                            class="mt-auto bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-blue-700 transition duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+                            View Profile
+                        </button>
+                    </div>
+                </div>
+                <div
+                    class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300 flex flex-col h-full">
+                    <div class="h-48 w-full bg-gray-100 flex items-center justify-center overflow-hidden">
+                        <img loading="lazy" src="Images/Batch MBA 2024-26/Yuktika Duggal.jpg" alt="Yuktika Duggal"
+                            class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-4 flex-grow flex flex-col items-center text-center">
+                        <h3 class="font-bold text-lg text-gray-800 mb-3">Yuktika Duggal</h3>
+                        <button onclick="openStudentModal(11)"
+                            class="mt-auto bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-blue-700 transition duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+                            View Profile
+                        </button>
+                    </div>
+                </div>
+                <div
+                    class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300 flex flex-col h-full">
+                    <div class="h-48 w-full bg-gray-100 flex items-center justify-center overflow-hidden">
+                        <img loading="lazy" src="Images/Batch MBA 2024-26/Nishank.png" alt="Nishank Singh Parihar"
+                            class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-4 flex-grow flex flex-col items-center text-center">
+                        <h3 class="font-bold text-lg text-gray-800 mb-3">Nishank Singh Parihar</h3>
+                        <button onclick="openStudentModal(12)"
+                            class="mt-auto bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-blue-700 transition duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+                            View Profile
+                        </button>
+                    </div>
+                </div>
+                <div
+                    class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300 flex flex-col h-full">
+                    <div class="h-48 w-full bg-gray-100 flex items-center justify-center overflow-hidden">
+                        <img loading="lazy" src="Images/Batch MBA 2024-26/Pranav P.jpg" alt="Pranav P"
+                            class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-4 flex-grow flex flex-col items-center text-center">
+                        <h3 class="font-bold text-lg text-gray-800 mb-3">Pranav P</h3>
+                        <button onclick="openStudentModal(13)"
+                            class="mt-auto bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-blue-700 transition duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+                            View Profile
+                        </button>
+                    </div>
+                </div>
+                <div
+                    class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300 flex flex-col h-full">
+                    <div class="h-48 w-full bg-gray-100 flex items-center justify-center overflow-hidden">
+                        <img loading="lazy" src="Images/Batch MBA 2024-26/Hester J M.jpg" alt="Hester J M"
+                            class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-4 flex-grow flex flex-col items-center text-center">
+                        <h3 class="font-bold text-lg text-gray-800 mb-3">Hester J M</h3>
+                        <button onclick="openStudentModal(14)"
+                            class="mt-auto bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-blue-700 transition duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+                            View Profile
+                        </button>
+                    </div>
+                </div>
+                <div
+                    class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300 flex flex-col h-full">
+                    <div class="h-48 w-full bg-gray-100 flex items-center justify-center overflow-hidden">
+                        <img loading="lazy" src="Images/Batch MBA 2024-26/RAJAT VERMA.jpg" alt="RAJAT VERMA"
+                            class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-4 flex-grow flex flex-col items-center text-center">
+                        <h3 class="font-bold text-lg text-gray-800 mb-3">RAJAT VERMA</h3>
+                        <button onclick="openStudentModal(15)"
+                            class="mt-auto bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-blue-700 transition duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+                            View Profile
+                        </button>
+                    </div>
+                </div>
+                <div
+                    class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300 flex flex-col h-full">
+                    <div class="h-48 w-full bg-gray-100 flex items-center justify-center overflow-hidden">
+                        <img loading="lazy" src="Images/Batch MBA 2024-26/Rishit Raina.jpeg" alt="Rishit Raina"
+                            class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-4 flex-grow flex flex-col items-center text-center">
+                        <h3 class="font-bold text-lg text-gray-800 mb-3">Rishit Raina</h3>
+                        <button onclick="openStudentModal(16)"
+                            class="mt-auto bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-blue-700 transition duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+                            View Profile
+                        </button>
+                    </div>
+                </div>
+                <div
+                    class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300 flex flex-col h-full">
+                    <div class="h-48 w-full bg-gray-100 flex items-center justify-center overflow-hidden">
+                        <img loading="lazy" src="Images/Batch MBA 2024-26/pulkita thakran.jpg" alt="Pulkita"
+                            class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-4 flex-grow flex flex-col items-center text-center">
+                        <h3 class="font-bold text-lg text-gray-800 mb-3">Pulkita</h3>
+                        <button onclick="openStudentModal(17)"
+                            class="mt-auto bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-blue-700 transition duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+                            View Profile
+                        </button>
+                    </div>
+                </div>
+                <div
+                    class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300 flex flex-col h-full">
+                    <div class="h-48 w-full bg-gray-100 flex items-center justify-center overflow-hidden">
+                        <img loading="lazy" src="Images/Batch MBA 2024-26/Isha Salhotra.jpeg" alt="Isha Salhotra"
+                            class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-4 flex-grow flex flex-col items-center text-center">
+                        <h3 class="font-bold text-lg text-gray-800 mb-3">Isha Salhotra</h3>
+                        <button onclick="openStudentModal(18)"
+                            class="mt-auto bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-blue-700 transition duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+                            View Profile
+                        </button>
+                    </div>
+                </div>
+                <div
+                    class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300 flex flex-col h-full">
+                    <div class="h-48 w-full bg-gray-100 flex items-center justify-center overflow-hidden">
+                        <img loading="lazy" src="Images/Batch MBA 2024-26/Harshita Rai.jpg" alt="Harshita Rai"
+                            class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-4 flex-grow flex flex-col items-center text-center">
+                        <h3 class="font-bold text-lg text-gray-800 mb-3">Harshita Rai</h3>
+                        <button onclick="openStudentModal(19)"
+                            class="mt-auto bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-blue-700 transition duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+                            View Profile
+                        </button>
+                    </div>
+                </div>
+                <div
+                    class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300 flex flex-col h-full">
+                    <div class="h-48 w-full bg-gray-100 flex items-center justify-center overflow-hidden">
+                        <img loading="lazy" src="Images/Batch MBA 2024-26/Nandini.jpg" alt="Nandini"
+                            class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-4 flex-grow flex flex-col items-center text-center">
+                        <h3 class="font-bold text-lg text-gray-800 mb-3">Nandini</h3>
+                        <button onclick="openStudentModal(20)"
+                            class="mt-auto bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-blue-700 transition duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+                            View Profile
+                        </button>
+                    </div>
+                </div>
+                <div
+                    class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300 flex flex-col h-full">
+                    <div class="h-48 w-full bg-gray-100 flex items-center justify-center overflow-hidden">
+                        <img loading="lazy" src="Images/Batch MBA 2024-26/Ankita Singh.jpeg" alt="Ankita singh"
+                            class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-4 flex-grow flex flex-col items-center text-center">
+                        <h3 class="font-bold text-lg text-gray-800 mb-3">Ankita singh</h3>
+                        <button onclick="openStudentModal(21)"
+                            class="mt-auto bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-blue-700 transition duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+                            View Profile
+                        </button>
+                    </div>
+                </div>
+                <div
+                    class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300 flex flex-col h-full">
+                    <div class="h-48 w-full bg-gray-100 flex items-center justify-center overflow-hidden">
+                        <img loading="lazy" src="Images/Batch MBA 2024-26/sanika.jpeg" alt="sanika herlekar"
+                            class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-4 flex-grow flex flex-col items-center text-center">
+                        <h3 class="font-bold text-lg text-gray-800 mb-3">sanika herlekar</h3>
+                        <button onclick="openStudentModal(22)"
+                            class="mt-auto bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-blue-700 transition duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+                            View Profile
+                        </button>
+                    </div>
+                </div>
+                <div
+                    class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300 flex flex-col h-full">
+                    <div class="h-48 w-full bg-gray-100 flex items-center justify-center overflow-hidden">
+                        <img loading="lazy" src="Images/Batch MBA 2024-26/Khubaib Khalid Khan.jpeg"
+                            alt="Khubaib Khalid Khan" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-4 flex-grow flex flex-col items-center text-center">
+                        <h3 class="font-bold text-lg text-gray-800 mb-3">Khubaib Khalid Khan</h3>
+                        <button onclick="openStudentModal(23)"
+                            class="mt-auto bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-blue-700 transition duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+                            View Profile
+                        </button>
+                    </div>
+                </div>
+                <div
+                    class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300 flex flex-col h-full">
+                    <div class="h-48 w-full bg-gray-100 flex items-center justify-center overflow-hidden">
+                        <img loading="lazy" src="Images/Batch MBA 2024-26/Naitik Raj.jpeg" alt="Naitik Raj"
+                            class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-4 flex-grow flex flex-col items-center text-center">
+                        <h3 class="font-bold text-lg text-gray-800 mb-3">Naitik Raj</h3>
+                        <button onclick="openStudentModal(24)"
+                            class="mt-auto bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-blue-700 transition duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+                            View Profile
+                        </button>
+                    </div>
+                </div>
+                <div
+                    class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300 flex flex-col h-full">
+                    <div class="h-48 w-full bg-gray-100 flex items-center justify-center overflow-hidden">
+                        <img loading="lazy" src="Images/Batch MBA 2024-26/Chaitanya.jpg" alt="Chaitanya"
+                            class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-4 flex-grow flex flex-col items-center text-center">
+                        <h3 class="font-bold text-lg text-gray-800 mb-3">Chaitanya</h3>
+                        <button onclick="openStudentModal(25)"
+                            class="mt-auto bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-blue-700 transition duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+                            View Profile
+                        </button>
+                    </div>
+                </div>
+                <div
+                    class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300 flex flex-col h-full">
+                    <div class="h-48 w-full bg-gray-100 flex items-center justify-center overflow-hidden">
+                        <img loading="lazy" src="Images/Batch MBA 2024-26/riteka rao.jpg" alt="Riteka Rao"
+                            class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-4 flex-grow flex flex-col items-center text-center">
+                        <h3 class="font-bold text-lg text-gray-800 mb-3">Riteka Rao</h3>
+                        <button onclick="openStudentModal(26)"
+                            class="mt-auto bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-blue-700 transition duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+                            View Profile
+                        </button>
+                    </div>
+                </div>
+                <div
+                    class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300 flex flex-col h-full">
+                    <div class="h-48 w-full bg-gray-100 flex items-center justify-center overflow-hidden">
+                        <img loading="lazy" src="Images/Batch MBA 2024-26/Aman sharma 2025 - Aman Sharma.jpeg"
+                            alt="Aman Sharma" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-4 flex-grow flex flex-col items-center text-center">
+                        <h3 class="font-bold text-lg text-gray-800 mb-3">Aman Sharma</h3>
+                        <button onclick="openStudentModal(27)"
+                            class="mt-auto bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-blue-700 transition duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+                            View Profile
+                        </button>
+                    </div>
+                </div>
+                <div
+                    class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300 flex flex-col h-full">
+                    <div class="h-48 w-full bg-gray-100 flex items-center justify-center overflow-hidden">
+                        <img loading="lazy" src="Images/Batch MBA 2024-26/Mokshika.jpg" alt="Mokshika Arya"
+                            class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-4 flex-grow flex flex-col items-center text-center">
+                        <h3 class="font-bold text-lg text-gray-800 mb-3">Mokshika Arya</h3>
+                        <button onclick="openStudentModal(28)"
+                            class="mt-auto bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-blue-700 transition duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+                            View Profile
+                        </button>
+                    </div>
+                </div>
+                <div
+                    class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300 flex flex-col h-full">
+                    <div class="h-48 w-full bg-gray-100 flex items-center justify-center overflow-hidden">
+                        <img loading="lazy" src="Images/Batch MBA 2024-26/Narasimha Jetty.jpeg" alt="Jetty Narasimha"
+                            class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-4 flex-grow flex flex-col items-center text-center">
+                        <h3 class="font-bold text-lg text-gray-800 mb-3">Jetty Narasimha</h3>
+                        <button onclick="openStudentModal(29)"
+                            class="mt-auto bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-blue-700 transition duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+                            View Profile
+                        </button>
+                    </div>
+                </div>
+                <div
+                    class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300 flex flex-col h-full">
+                    <div class="h-48 w-full bg-gray-100 flex items-center justify-center overflow-hidden">
+                        <img loading="lazy" src="Images/Batch MBA 2024-26/Eslavath Thirupathi.jpg"
+                            alt="ESLAVATH THIRUPATHI" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-4 flex-grow flex flex-col items-center text-center">
+                        <h3 class="font-bold text-lg text-gray-800 mb-3">ESLAVATH THIRUPATHI</h3>
+                        <button onclick="openStudentModal(30)"
+                            class="mt-auto bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-blue-700 transition duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+                            View Profile
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- Batch 2025-27 Section -->
+        <section class="mb-16">
+            <div class="bg-gradient-to-r from-green-600 to-green-800 text-white py-6 px-8 rounded-lg shadow-lg mb-8">
+                <h2 class="text-3xl font-bold">Batch 2025-2027</h2>
+                <p class="text-green-100 mt-2">11 Students</p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+                <!-- Student Cards for Batch 2025-27 (Dummy Data) -->
+                <div
+                    class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300">
+                    <img loading="lazy" src="Images/Batch MBA 2025-27/AN!KET_KUMAR.jpg" alt="Aniket Kumar"
+                        class="w-full h-48 object-cover">
+                    <div class="p-4 text-center">
+                        <h3 class="font-semibold text-gray-800">Aniket Kumar</h3>
+                        <a href="https://www.linkedin.com/in/aniket-kumar-756222301?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                            class="inline-flex items-center text-blue-600 hover:text-blue-800 text-sm font-medium mt-2"><i
+                                class="fab fa-linkedin mr-1"></i> LinkedIn Profile</a>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300">
+                    <img loading="lazy" src="Images/Batch MBA 2025-27/Anjali.jpg" alt="Anjali Verma"
+                        class="w-full h-48 object-cover">
+                    <div class="p-4 text-center">
+                        <h3 class="font-semibold text-gray-800">Anjali Verma</h3>
+                        <a href="https://www.linkedin.com/in/anjali-verma17/"
+                            class="inline-flex items-center text-blue-600 hover:text-blue-800 text-sm font-medium mt-2"><i
+                                class="fab fa-linkedin mr-1"></i> LinkedIn Profile</a>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300">
+                    <img loading="lazy" src="Images/Batch MBA 2025-27/Charchit.jpg" alt="Charchit Aggarwal"
+                        class="w-full h-48 object-contain">
+                    <div class="p-4 text-center">
+                        <h3 class="font-semibold text-gray-800">Charchit Aggarwal</h3>
+                        <a href="https://www.linkedin.com/in/charchit-aggrawal/"
+                            class="inline-flex items-center text-blue-600 hover:text-blue-800 text-sm font-medium mt-2"><i
+                                class="fab fa-linkedin mr-1"></i> LinkedIn Profile</a>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300">
+                    <img loading="lazy" src="Images/Batch MBA 2025-27/lakshy gupta.png" alt="Lakshy Gupta"
+                        class="w-full h-48 object-contain">
+                    <div class="p-4 text-center">
+                        <h3 class="font-semibold text-gray-800">Lakshy Gupta</h3>
+                        <a href="https://www.linkedin.com/in/lakshy-gupta-927497271/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                            class="inline-flex items-center text-blue-600 hover:text-blue-800 text-sm font-medium mt-2"><i
+                                class="fab fa-linkedin mr-1"></i> LinkedIn Profile</a>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300">
+                    <img loading="lazy" src="Images/Batch MBA 2025-27/Rhishi_Kalp.jpeg" alt="Rhishi Kalp Chandrika"
+                        class="w-full h-48 object-cover">
+                    <div class="p-4 text-center">
+                        <h3 class="font-semibold text-gray-800">Rhishi Kalp Chandrika</h3>
+                        <a href="https://www.linkedin.com/in/rhishi-kalp-chandrika/"
+                            class="inline-flex items-center text-blue-600 hover:text-blue-800 text-sm font-medium mt-2"><i
+                                class="fab fa-linkedin mr-1"></i> LinkedIn Profile</a>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300">
+                    <img loading="lazy" src="Images/Batch MBA 2025-27/Sangeeta_Mistri.jpg" alt="Sangeeta Mistri"
+                        class="w-full h-48 object-cover">
+                    <div class="p-4 text-center">
+                        <h3 class="font-semibold text-gray-800">Sangeeta Mistri</h3>
+                        <a href="https://www.linkedin.com/in/sangeeta-mistri-509b31264/?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                            class="inline-flex items-center text-blue-600 hover:text-blue-800 text-sm font-medium mt-2"><i
+                                class="fab fa-linkedin mr-1"></i> LinkedIn Profile</a>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300">
+                    <img loading="lazy" src="Images/Batch MBA 2025-27/Prabhat_Kumar.png" alt="Prabhat Kumar"
+                        class="w-full h-48 object-cover">
+                    <div class="p-4 text-center">
+                        <h3 class="font-semibold text-gray-800">Prabhat Kumar</h3>
+                        <a href="https://www.linkedin.com/in/prabhat-kumar-6b5b6b5b5/?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                            class="inline-flex items-center text-blue-600 hover:text-blue-800 text-sm font-medium mt-2"><i
+                                class="fab fa-linkedin mr-1"></i> LinkedIn Profile</a>
+                    </div>
+                </div>
+                <div
+                    class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300">
+                    <img loading="lazy" src="Images/Batch MBA 2025-27/yashika.jpeg" alt="Yashika Verma
+" class="w-full h-48 object-cover">
+                    <div class="p-4 text-center">
+                        <h3 class="font-semibold text-gray-800">Yashika Verma</h3>
+                        <a href="https://www.linkedin.com/in/yashika-verma-b66479201/"
+                            class="inline-flex items-center text-blue-600 hover:text-blue-800 text-sm font-medium mt-2"><i
+                                class="fab fa-linkedin mr-1"></i> LinkedIn Profile</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <div id="social-sidebar" class="fixed top-1/2 right-0 transform -translate-y-1/2 z-50">
+        <!-- Close button for mobile -->
+        <button id="closeSocialBtn" class="social-close-btn" onclick="hideSocialSidebar()"
+            aria-label="Close social media sidebar">
+            ×
+        </button>
+        <div class="flex flex-col space-y-2">
+            <a href="https://in.linkedin.com/company/abvsme" target="_blank"
+                class="bg-blue-700 text-white w-12 h-12 rounded-full flex items-center justify-center hover:bg-blue-800 transition transform hover:scale-110 duration-300">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://www.facebook.com/ABVSME/" target="_blank"
+                class="bg-blue-600 text-white w-12 h-12 rounded-full flex items-center justify-center hover:bg-blue-700 transition transform hover:scale-110 duration-300">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/abvsme/?hl=en" target="_blank"
+                class="bg-pink-500 text-white w-12 h-12 rounded-full flex items-center justify-center hover:bg-pink-600 transition transform hover:scale-110 duration-300">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://x.com/abvsme_jnu" target="_blank"
+                class="bg-gray-800 text-white w-12 h-12 rounded-full flex items-center justify-center hover:bg-black transition transform hover:scale-110 duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 16 16">
+                    <path
+                        d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.6.75ZM11.49 13.5h1.432L4.162 2.16h-1.55l8.88 11.34Z" />
+                </svg>
+
+            </a>
+            <a href="mailto:info@abvsme.jnu.ac.in"
+                class="bg-gray-600 text-white w-12 h-12 rounded-full flex items-center justify-center hover:bg-gray-700 transition transform hover:scale-110 duration-300">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a href="tel:+91-11-2674-1228"
+                class="bg-green-500 text-white w-12 h-12 rounded-full flex items-center justify-center hover:bg-green-600 transition transform hover:scale-110 duration-300">
+                <i class="fas fa-phone-alt"></i>
+            </a>
+        </div>
+    </div>
+
+    <button id="scrollToTopBtn"
+        class="hidden fixed bottom-8 right-8 bg-blue-600 text-white rounded-full p-4 shadow-lg hover:bg-blue-700 transition duration-300 z-50">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+        </svg>
+    </button>
+
+    <footer class="bg-gray-900 text-gray-300">
+        <div class="container mx-auto px-4 py-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center md:text-left">
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-4">About ABVSME</h3>
+                    <p class="text-sm">
+                        The Atal Bihari Vajpayee School of Management and Entrepreneurship,JNU was established in 2018,
+                        with a vision to integrate excellence in Management Education with the University's strong
+                        tradition of interdisciplinary research and social responsibility.
+                    </p>
+                    <p class="mt-4 text-sm">
+                        Jawaharlal Nehru University, <br>New Delhi - 110067, India
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-4">Quick Links</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="about.html" class="hover:text-white transition duration-300">About Us</a></li>
+                        <li><a href="Mba-admission.html" class="hover:text-white transition duration-300">MBA
+                                Admission</a></li>
+                        <li><a href="mba-courses.html" class="hover:text-white transition duration-300">MBA
+                                Program</a></li>
+                        <li><a href="Placements.html" class="hover:text-white transition duration-300">Placements</a>
+                        </li>
+                        <li><a href="https://www.jnu.ac.in/abvsme_faculty"
+                                class="hover:text-white transition duration-300">Faculty</a></li>
+                        <li><a href="https://www.jnu.ac.in/sitemap"
+                                class="hover:text-white transition duration-300">Site Map</a></li>
+                        <li><a href="https://www.jnu.ac.in/feedback"
+                                class="hover:text-white transition duration-300">Feedback</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-4">Contact us</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="mailto:info@abvsme.jnu.ac.in"
+                                class="hover:text-white transition duration-300">info@abvsme.jnu.ac.in</a></li>
+                        <li><a href="tel:+91-11-2674-2676"
+                                class="hover:text-white transition duration-300">+91-11-2674-2676</a></li>
+                    </ul>
+                    <div class="flex justify-center md:justify-start space-x-4 mt-4">
+                        <a href="https://www.facebook.com/ABVSME" class="text-gray-400 hover:text-white text-xl"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://x.com/abvsme_jnu" class="text-gray-400 hover:text-white text-xl"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="https://in.linkedin.com/company/abvsme"
+                            class="text-gray-400 hover:text-white text-xl"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="mailto:info@abvsme.jnu.ac.in" class="text-gray-400 hover:text-white text-xl"><i
+                                class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <a href="https://www.jnu.ac.in/" target="_blank" rel="noopener noreferrer"
+                        class="flex items-center justify-center md:justify-start space-x-3">
+                        <img loading="lazy" src="Images/JNU_LOGO.jpg" alt="JNU Logo"
+                            class="h-12 w-auto bg-white p-1 rounded-md">
+                        <h3 class="text-lg font-semibold text-white">Jawaharlal Nehru University</h3>
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-6 text-center text-sm">
+                <p> Jawaharlal Nehru University. New Mehrauli Road, New Delhi 110067. All rights reserved.</p>
+                <p class="mt-2">Last reviewed and updated on 2025-09-04</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Student Profile Modal -->
+    <div id="studentModal" class="fixed inset-0 z-50 hidden overflow-y-auto" aria-labelledby="modal-name" role="dialog"
+        aria-modal="true">
+        <div class="flex items-center justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+            <!-- Background overlay -->
+            <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" aria-hidden="true"
+                onclick="closeStudentModal()"></div>
+
+            <!-- Modal panel -->
+            <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
+            <div
+                class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full">
+                <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+                    <div class="sm:flex sm:items-start">
+                        <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left w-full">
+                            <div class="flex justify-between items-center mb-4">
+                                <h3 class="text-lg leading-6 font-medium text-gray-900" id="modal-name">Student Name
+                                </h3>
+                                <button type="button" class="text-gray-400 hover:text-gray-500 focus:outline-none"
+                                    onclick="closeStudentModal()">
+                                    <span class="sr-only">Close</span>
+                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M6 18L18 6M6 6l12 12" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="flex justify-center mb-4">
+                                <img loading="lazy" id="modal-image"
+                                    class="h-48 w-48 object-cover rounded-full border-4 border-blue-100" src="" alt="">
+                            </div>
+                            <div class="text-center mb-2">
+                                <p id="modal-major" class="text-sm text-blue-600 font-semibold"></p>
+                            </div>
+                            <div class="mt-4">
+                                <p id="modal-objective" class="text-sm text-gray-500"></p>
+                            </div>
+                            <div id="modal-linkedin" class="mt-4 flex justify-center">
+                                <!-- LinkedIn link will be injected here -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
+                    <button type="button"
+                        class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-blue-600 text-base font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 sm:ml-3 sm:w-auto sm:text-sm"
+                        onclick="closeStudentModal()">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js" defer></script>
+    <script src="Js/Mba-Students.js" defer></script>
+
+
+</body>
+
+</html>

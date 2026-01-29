@@ -1,0 +1,805 @@
+/* Global overflow prevention */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    line-height: 1.7;
+    /* Enhanced readability */
+    /* Prevent horizontal scrolling */
+}
+
+/* Enhanced typography for better readability */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+}
+
+/* p { max-width: 75ch; } - Removed to allow content to fill grey boxes */
+
+/* Ensure all images and media respect container width */
+img,
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+iframe {
+    max-width: 100%;
+}
+
+/* Prevent any container from exceeding viewport width */
+/* .container { max-width: 100%; } - Removed to restore Tailwind container behavior */
+
+/* Fix for social media sidebar on mobile */
+@media (max-width: 768px) {
+
+    /* Reduce excessive vertical spacing on mobile */
+    section {
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+    }
+
+    .py-16 {
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+    }
+
+    /* Make social media sidebar smaller and add close button on mobile */
+    .fixed.top-1\/2.right-0 {
+        transform: translateY(-50%) scale(0.8);
+        right: -5px;
+    }
+
+    .fixed.top-1\/2.right-0.hidden-mobile {
+        display: none !important;
+    }
+
+    /* Style for close button on social media sidebar */
+    .social-close-btn {
+        display: flex !important;
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        width: 24px;
+        height: 24px;
+        background-color: #ef4444;
+        color: white;
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: bold;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        z-index: 60;
+        transition: all 0.3s ease;
+    }
+
+    .social-close-btn:hover {
+        background-color: #dc2626;
+        transform: scale(1.1);
+    }
+
+    /* Ensure no element causes horizontal overflow on mobile */
+    * {
+        max-width: 100vw;
+    }
+
+    /* Remove any problematic padding on mobile */
+    .main-content {
+        padding-right: 0 !important;
+    }
+}
+
+/* Hide close button on desktop */
+@media (min-width: 769px) {
+    .social-close-btn {
+        display: none !important;
+    }
+}
+
+/* Custom styles for hero background image (will be overridden by JS for carousel) */
+.hero-background {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* .main-content { padding-right: 40px; } - Removed to fix irregular padding */
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Prevent navigation menu items from wrapping */
+header nav>div>a,
+header nav>div>div>a {
+    white-space: nowrap;
+}
+
+
+.justified-text {
+    text-align: justify;
+}
+
+
+
+/* Overlay for hero section */
+.hero-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Dark overlay for text readability */
+}
+
+/* Ensure image transitions smoothly */
+.hero-image {
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Hide scrollbar for carousels */
+.faculty-carousel-inner::-webkit-scrollbar,
+.news-carousel-inner::-webkit-scrollbar {
+    display: none;
+}
+
+.faculty-carousel-inner,
+.news-carousel-inner {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+    scroll-snap-type: x mandatory;
+}
+
+.faculty-card,
+.news-card {
+    scroll-snap-align: start;
+    flex: 0 0 auto;
+    /* Prevent cards from shrinking */
+    width: 100%;
+    /* Default to full width on small screens */
+}
+
+/* Adjust card width for larger screens */
+@media (min-width: 768px) {
+    .faculty-card {
+        width: calc(100% / 2 - 1rem);
+        /* Two cards per row with gap */
+    }
+
+    .news-card {
+        width: calc(100% / 2 - 1rem);
+        /* Two cards per row with gap */
+    }
+}
+
+@media (min-width: 1024px) {
+    .faculty-card {
+        width: calc(100% / 4 - 1rem);
+        /* Four cards per row with gap */
+    }
+
+    .news-card {
+        width: calc(100% / 3 - 1rem);
+        /* Three cards per row with gap */
+    }
+}
+
+/* Styles for carousel dots */
+.carousel-dot {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    margin: 0 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-dot.active {
+    background-color: white;
+}
+
+.faculty-carousel-dot {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.faculty-carousel-dot.active {
+    background-color: #3b82f6;
+    /* Tailwind blue-500 */
+}
+
+.news-carousel-dot {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.news-carousel-dot.active {
+    background-color: #3b82f6;
+    /* Tailwind blue-500 */
+}
+
+.gallery-carousel-dot {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.gallery-carousel-dot.active {
+    background-color: #3b82f6;
+    /* Tailwind blue-500 */
+}
+
+/* Upward Ticker Styles */
+#upward-ticker-container {
+    border-radius: 0.5rem;
+    background-color: #ffffff;
+    padding: 1rem;
+    border: 1px solid #e5e7eb;
+    /* gray-200 */
+}
+
+#upward-ticker-items {
+    animation: scroll-up 25s linear infinite;
+}
+
+#upward-ticker-container:hover #upward-ticker-items {
+    animation-play-state: paused;
+    /* Pause animation on hover */
+}
+
+.upward-ticker-item {
+    padding: 1rem;
+    border-bottom: 1px solid #f3f4f6;
+    /* gray-100 */
+    display: block;
+    color: #374151;
+    /* gray-700 */
+    transition: background-color 0.3s;
+}
+
+.upward-ticker-item:last-child {
+    border-bottom: none;
+}
+
+.upward-ticker-item:hover {
+    background-color: #f9fafb;
+    /* gray-50 */
+    color: #1d4ed8;
+    /* blue-700 */
+}
+
+.upward-ticker-item .date {
+    font-size: 0.8rem;
+    color: #6b7280;
+    /* gray-500 */
+    margin-bottom: 0.25rem;
+}
+
+.upward-ticker-item .text {
+    font-weight: 500;
+}
+
+@keyframes scroll-up {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-50%);
+        /* Moves the content up by half its height for a seamless loop */
+    }
+}
+
+.new-badge-upward {
+    background-color: #ef4444;
+    /* red-500 */
+    color: white;
+    font-weight: bold;
+    padding: 2px 8px;
+    border-radius: 5px;
+    font-size: 0.75rem;
+    margin-right: 8px;
+    /* Adds space between the badge and the text */
+    flex-shrink: 0;
+}
+
+
+/* Nested dropdown for desktop */
+.nested-dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 100%;
+    /* Position to the left of parent */
+    top: 0;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    padding: 0.5rem 0;
+    width: 15rem;
+    /* Adjust width as needed */
+    z-index: 60;
+    /* Higher z-index than parent dropdown */
+    max-height: 200px;
+    /* Set a max height */
+    overflow-y: auto;
+    /* Enable vertical scroll */
+}
+
+.nested-dropdown-toggle:hover+.nested-dropdown-menu,
+.nested-dropdown-menu:hover {
+    display: block;
+}
+
+/* Custom scrollbar for webkit browsers */
+.nested-dropdown-menu::-webkit-scrollbar {
+    width: 8px;
+}
+
+.nested-dropdown-menu::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.nested-dropdown-menu::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+.nested-dropdown-menu::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Styles for admission page tabs */
+.tab-button {
+    padding: 1rem 2rem;
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    color: #4b5563;
+    /* gray-600 */
+}
+
+.tab-button.active {
+    color: #2563eb;
+    /* blue-600 */
+    border-bottom-color: #2563eb;
+    /* blue-600 */
+}
+
+.tab-content {
+    animation: fadeIn 0.5s;
+}
+
+/* NEW STYLES FOR MBA COURSES PAGE */
+
+/* Course Page Tab Buttons */
+.course-tab-button {
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    color: #4b5563;
+    /* gray-600 */
+    margin-bottom: -2px;
+    /* Align with border */
+}
+
+.course-tab-button.active {
+    color: #2563eb;
+    /* blue-600 */
+    border-bottom-color: #2563eb;
+}
+
+.course-tab-content {
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Course Card Styles */
+.course-card {
+    background-color: white;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    border: 1px solid #e5e7eb;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.course-card .course-code {
+    color: #6b7280;
+    /* gray-500 */
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+}
+
+/* Smaller course cards for electives */
+.course-card-sm {
+    background-color: #f9fafb;
+    /* gray-50 */
+    border-radius: 0.5rem;
+    padding: 1rem;
+    border: 1px solid #e5e7eb;
+    /* gray-200 */
+    text-align: center;
+    color: #374151;
+    /* gray-700 */
+}
+
+/* Accordion Styles */
+.accordion-item {
+    border: 1px solid #d1d5db;
+    /* gray-300 */
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.accordion-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 1.5rem;
+    font-weight: 600;
+    color: #1f2937;
+    /* gray-800 */
+    background-color: #f9fafb;
+    /* gray-50 */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.accordion-button:hover {
+    background-color: #f3f4f6;
+    /* gray-100 */
+}
+
+.accordion-content {
+    padding: 1.5rem;
+    background-color: white;
+    border-top: 1px solid #d1d5db;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Mobile responsive tabs - abbreviated labels */
+@media (max-width: 768px) {
+    .course-tab-button {
+        padding: 0.75rem 1rem;
+        font-size: 0.875rem;
+    }
+}
+
+/* ============================================= */
+/* == Styles for Placements Page Carousels    == */
+/* ============================================= */
+
+/* Logo grid for the companies 
+ section */
+.logo-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+/* Placement Statistics carousel styles */
+.stats-carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    /* Adjust as needed */
+    margin: 0 auto;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.stats-carousel-image {
+    width: 100%;
+    display: block;
+    transition: opacity 0.5s ease-in-out;
+    height: auto;
+}
+
+.stats-dots-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.stats-carousel-dot {
+    width: 10px;
+    height: 10px;
+    background-color: #d1d5db;
+    /* gray-400 */
+    border-radius: 50%;
+    margin: 0 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.stats-carousel-dot.active {
+    background-color: #2563eb;
+    /* blue-600 */
+}
+
+/* Company logos carousel styles */
+.companies-carousel-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.companies-carousel-inner {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.companies-carousel-inner::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari */
+}
+
+.companies-carousel-page {
+    flex-shrink: 0;
+    width: 100%;
+    scroll-snap-align: start;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 0.5rem;
+    border-radius: 50%;
+    z-index: 10;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.carousel-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.carousel-button-prev {
+    left: 1rem;
+}
+
+.carousel-button-next {
+    right: 1rem;
+}
+
+.companies-dots-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.companies-carousel-dot {
+    width: 10px;
+    height: 10px;
+    background-color: #d1d5db;
+    /* gray-400 */
+    border-radius: 50%;
+    margin: 0 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.companies-carousel-dot.active {
+    background-color: #2563eb;
+    /* blue-600 */
+}
+
+/* Table Container with fixed height */
+.table-container {
+    max-height: 250px;
+    /* Fits ~5 rows */
+    overflow: hidden;
+}
+
+/* Scroll buttons */
+.scroll-btn {
+    background-color: #d1d5db;
+    /* gray-300 */
+    color: #1f2937;
+    /* gray-800 */
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    transition: all 0.3s ease;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.scroll-btn:hover {
+    background-color: #2563eb;
+    /* blue-600 */
+    color: white;
+}
+
+.scroll-btn:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+#internship-students-tbody td {
+    text-align: center;
+}
+
+/* Basic styling for the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    /* Merges borders */
+    font-family: sans-serif;
+}
+
+/* Style for table headers and cells */
+th,
+td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+/* Style for the header row */
+thead tr {
+    background-color: #f2f2f2;
+}
+
+/* Utility for line clamping */
+.line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* ============================================= */
+/* == UI/UX Enhancements                      == */
+/* ============================================= */
+
+/* Visual Hierarchy - Alternating section backgrounds */
+section:nth-child(even) {
+    background-color: #f9fafb;
+}
+
+section:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+/* Enhanced CTA buttons with gradients */
+.bg-blue-600 {
+    background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%) !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 6px rgba(59, 130, 246, 0.3);
+}
+
+.bg-blue-600:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(59, 130, 246, 0.4);
+    background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%) !important;
+}
+
+.bg-blue-700:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(29, 78, 216, 0.4);
+}
+
+/* Enhanced card hover effects */
+.transform.hover\:scale-105 {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.transform.hover\:scale-105:hover {
+    transform: translateY(-8px) scale(1.03) !important;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Accessibility - Focus indicators */
+*:focus {
+    outline: 2px solid #3b82f6;
+    outline-offset: 2px;
+}
+
+a:focus,
+button:focus {
+    outline: 2px solid #3b82f6;
+    outline-offset: 2px;
+}
+
+/* Hero section gradient overlay enhancement */
+
+
+/* Lazy loading fade-in effect */
+/* img[loading="lazy"] {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+} */
+
+/* img[loading="lazy"].loaded {
+    opacity: 1;
+} */
+
+/* Enhanced scroll to top button */
+#scrollToTopBtn {
+    background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%) !important;
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
+    transition: all 0.3s ease;
+    opacity: 0;
+}
+
+#scrollToTopBtn:hover {
+    transform: translateY(-3px) scale(1.1) !important;
+    box-shadow: 0 6px 20px rgba(59, 130, 246, 0.6);
+}
+
+#scrollToTopBtn.show {
+    opacity: 1;
+}
+
+/* Smooth transitions for interactive elements */
+a,
+button {
+    transition: all 0.2s ease;
+}
+
+/* Enhanced social media icons */
+.fixed.top-1\/2.right-0 a {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.fixed.top-1\/2.right-0 a:hover {
+    transform: scale(1.15) translateX(-3px);
+}
+
+/* Programs Carousel - Mobile View */
+@media (max-width: 768px) {
+    #programs-carousel-inner {
+        display: flex;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        scroll-snap-type: x mandatory;
+        gap: 1rem;
+    }
+
+    .program-card {
+        flex: 0 0 100%;
+        scroll-snap-align: center;
+    }
+}
