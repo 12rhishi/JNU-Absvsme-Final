@@ -518,19 +518,19 @@
 
     <main>
         <section id="hero-carousel"
-            class="relative h-[60vh] md:h-screen flex items-center justify-center text-white text-center overflow-hidden">
+            class="relative h-[60vh] md:h-screen min-h-[430px] flex items-center justify-center text-white text-center overflow-hidden">
             <img id="hero-image" alt="Campus Life" class="hero-image absolute inset-0 w-full h-full object-cover">
 
             <div class="hero-overlay absolute inset-0"></div>
-            <div class="relative z-10 p-6 max-w-4xl mx-auto">
-                <h1 class="text-5xl md:text-6xl font-extrabold leading-tight mb-4 drop-shadow-lg">
+            <div class="hero-content relative z-10 px-4 py-6 md:p-6 max-w-4xl mx-auto">
+                <h1 class="hero-title font-extrabold leading-tight mb-3 md:mb-4 drop-shadow-lg">
                     Atal Bihari Vajpayee School of Management and Entrepreneurship
                 </h1>
-                <p class="text-xl md:text-2xl mb-8 drop-shadow-md">
+                <p class="hero-subtitle mb-6 md:mb-8 drop-shadow-md">
                     Jawaharlal Nehru University, New Delhi
                 </p>
                 <a href="#programs"
-                    class="bg-blue-600 hover:bg-blue-700 text-white text-lg font-semibold px-8 py-3 rounded-full shadow-xl transition duration-300 transform hover:scale-105">
+                    class="hero-cta inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-full shadow-xl transition duration-300 transform hover:scale-105">
                     Explore Our Programs
                 </a>
             </div>
@@ -629,10 +629,10 @@
                 <h2 class="text-4xl font-bold text-blue-800 mb-12">Latest News & Events</h2>
                 <div id="news-carousel-inner" class="flex overflow-x-hidden snap-x snap-mandatory space-x-4 pb-4">
                     <div class="news-card transform hover:scale-105 transition duration-300 relative group cursor-pointer"
-                        data-action="open-news-modal" data-news-image="Images/News&Events/Admission_Poster.jpeg"
+                        data-action="open-news-modal" data-news-image="Images/News&Events/Admission_Poster.png"
                         data-news-title="Admission Open (2026-28)">
                         <div class="block relative overflow-hidden rounded-xl">
-                            <img src="Images/News&Events/Admission_Poster.jpeg" alt="Admission Open (2026-28)"
+                            <img src="Images/News&Events/Admission_Poster.png" alt="Admission Open (2026-28)"
                                 class="w-full h-80 object-cover shadow-lg object-top" loading="lazy">
                             <div
                                 class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -645,32 +645,34 @@
                     </div>
 
                     <div class="news-card transform hover:scale-105 transition duration-300 relative group cursor-pointer"
-                        data-action="open-news-modal" data-news-image="Images/News&Events/4sep.jpg"
-                        data-news-title="From Code to Cloud">
+                        data-action="open-news-modal" data-news-image="Images/News&Events/event2.jpg"
+                        data-news-title="CONJOINT AND DISCRIMINANT ANALYSIS">
                         <div class="block relative overflow-hidden rounded-xl">
-                            <img src="Images/News&Events/4sep.jpg" alt="From code to cloud"
+                            <img src="Images/News&Events/event2.jpg"
+                                alt="CONJOINT AND DISCRIMINANT ANALYSIS"
                                 class="w-full h-80 object-cover shadow-lg" loading="lazy">
                             <div
                                 class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                 <div class="absolute bottom-0 left-0 right-0 p-4 text-white">
-                                    <h3 class="text-lg font-bold">From Code to Cloud</h3>
-                                    <p class="text-sm">Conference Event</p>
+                                    <h3 class="text-lg font-bold">CONJOINT AND DISCRIMINANT ANALYSIS</h3>
+                                    <p class="text-sm">Workshop</p>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <div class="news-card transform hover:scale-105 transition duration-300 relative group cursor-pointer"
-                        data-action="open-news-modal" data-news-image="Images/News&Events/AtalSmritiSamvad_20Aug25.jpg"
-                        data-news-title="Atal Smriti Samvad">
+                        data-action="open-news-modal" data-news-image="Images/News&Events/Valuation_Workshop.png"
+                        data-news-title="Valuation, Merger & Acquisitions Modelling and LBO Modelling Using Excel">
                         <div class="block relative overflow-hidden rounded-xl">
-                            <img src="Images/News&Events/AtalSmritiSamvad_20Aug25.jpg" alt="AI in Business Seminar"
+                            <img src="Images/News&Events/Valuation_Workshop.png" alt="AI in Business Seminar"
                                 class="w-full h-80 object-cover shadow-lg" loading="lazy">
                             <div
                                 class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                 <div class="absolute bottom-0 left-0 right-0 p-4 text-white">
-                                    <h3 class="text-lg font-bold">Atal Smriti Samvad</h3>
-                                    <p class="text-sm">Special Seminar</p>
+                                    <h3 class="text-lg font-bold">Valuations, Merger & Acquisitions Modelling and LBO
+                                        Modelling Using Excel</h3>
+                                    <p class="text-sm">Workshop</p>
                                 </div>
                             </div>
                         </div>
@@ -698,10 +700,6 @@
 
     <div id="social-sidebar" class="fixed top-1/2 right-0 transform -translate-y-1/2 z-50">
         <!-- Close button for mobile -->
-        <button id="closeSocialBtn" class="social-close-btn" id="btn-close-social"
-            aria-label="Close social media sidebar">
-            ×
-        </button>
         <div class="flex flex-col space-y-2">
             <a href="https://in.linkedin.com/company/abvsme" target="_blank"
                 class="bg-blue-700 text-white w-12 h-12 rounded-full flex items-center justify-center hover:bg-blue-800 transition transform hover:scale-110 duration-300">
@@ -816,7 +814,7 @@
         <div class="relative max-w-2xl w-full flex flex-col items-center">
             <button id="btn-close-admission-poster"
                 class="absolute -top-10 right-0 text-white text-5xl hover:text-gray-300 transition-colors z-[210] focus:outline-none">&times;</button>
-            <img src="Images/News&Events/Admission_Poster.jpeg" alt="Admission Poster"
+            <img src="Images/News&Events/Admission_Poster.png" alt="Admission Poster"
                 class="max-h-[85vh] w-auto rounded-lg shadow-2xl object-scale-down border border-white/20 relative z-[205]">
         </div>
     </div>
@@ -831,7 +829,6 @@
                 class="max-h-[80vh] w-auto rounded-lg shadow-2xl object-contain border border-white/10">
             <div class="mt-6 text-center">
                 <h3 id="news-modal-title" class="text-white text-2xl font-bold mb-2"></h3>
-                <p class="text-gray-400">Click anywhere outside to close</p>
             </div>
         </div>
     </div>

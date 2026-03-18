@@ -251,6 +251,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const upwardTickerData = [
         {
+            text: "Congratulations to Isha Salhotra for getting placed at CoTrav ",
+            link: "#",
+            date: "21-April-2026",
+            isNew: true
+        },
+        {
+            text: "Congratulations to Nishank Singh Parihar for getting placed at CoTrav ",
+            link: "#",
+            date: "21-April-2026",
+            isNew: true
+        },
+        {
             text: "Admissions Opens - MBA 2026-28 Last Date to apply 31/03/2026",
             link: "javascript:void(0)",
             date: "16-March-2026",

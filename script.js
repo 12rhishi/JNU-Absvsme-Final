@@ -41,18 +41,104 @@ const mobileAdmissionMenu = document.getElementById('mobile-admission-menu');
 const mobileMoreButton = document.getElementById('mobile-more-button');
 const mobileMoreMenu = document.getElementById('mobile-more-menu');
 
+let menuBackdrop = null;
+
+function openMenuPanel() {
+    if (!mobileMenu) return;
+
+    mobileMenu.classList.remove('hidden');
+    mobileMenu.setAttribute('aria-hidden', 'false');
+    requestAnimationFrame(() => {
+        mobileMenu.classList.add('panel-open');
+    });
+
+    document.body.classList.add('menu-panel-open');
+    if (menuBackdrop) menuBackdrop.classList.add('active');
+    if (mobileMenuButton) mobileMenuButton.setAttribute('aria-expanded', 'true');
+}
+
+function closeMenuPanel() {
+    if (!mobileMenu) return;
+
+    mobileMenu.classList.remove('panel-open');
+    document.body.classList.remove('menu-panel-open');
+    if (menuBackdrop) menuBackdrop.classList.remove('active');
+    if (mobileMenuButton) mobileMenuButton.setAttribute('aria-expanded', 'false');
+
+    window.setTimeout(() => {
+        if (!mobileMenu.classList.contains('panel-open')) {
+            mobileMenu.classList.add('hidden');
+            mobileMenu.setAttribute('aria-hidden', 'true');
+        }
+    }, 280);
+}
+
+function closeAllMobileSubmenus() {
+    if (mobileMoreMenu) mobileMoreMenu.classList.add('hidden');
+    if (mobileMoreButton) mobileMoreButton.querySelector('svg')?.classList.remove('rotate-180');
+    if (mobileAboutMenu) mobileAboutMenu.classList.add('hidden');
+    if (mobileAboutButton) mobileAboutButton.querySelector('svg')?.classList.remove('rotate-180');
+    if (mobileProgramsMenu) mobileProgramsMenu.classList.add('hidden');
+    if (mobileProgramsButton) mobileProgramsButton.querySelector('svg')?.classList.remove('rotate-180');
+    if (mobileFacultyMenu) mobileFacultyMenu.classList.add('hidden');
+    if (mobileFacultyButton) mobileFacultyButton.querySelector('svg')?.classList.remove('rotate-180');
+    if (mobilePeopleMenu) mobilePeopleMenu.classList.add('hidden');
+    if (mobilePeopleButton) mobilePeopleButton.querySelector('svg')?.classList.remove('rotate-180');
+    if (mobileStudentMenu) mobileStudentMenu.classList.add('hidden');
+    if (mobileStudentButton) mobileStudentButton.querySelector('svg')?.classList.remove('rotate-180');
+    if (mobileLibraryMenu) mobileLibraryMenu.classList.add('hidden');
+    if (mobileLibraryButton) mobileLibraryButton.querySelector('svg')?.classList.remove('rotate-180');
+    if (mobileAdmissionMenu) mobileAdmissionMenu.classList.add('hidden');
+    if (mobileAdmissionButton) mobileAdmissionButton.querySelector('svg')?.classList.remove('rotate-180');
+}
 
 if (mobileMenuButton && mobileMenu) {
     mobileMenuButton.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
+        if (mobileMenu.classList.contains('hidden')) {
+            openMenuPanel();
+        } else {
+            closeMenuPanel();
+        }
     });
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    if (!mobileMenuButton || !mobileMenu) return;
+
+    mobileMenu.classList.add('mobile-side-panel');
+    mobileMenu.setAttribute('aria-hidden', mobileMenu.classList.contains('hidden') ? 'true' : 'false');
+    mobileMenuButton.setAttribute('aria-expanded', 'false');
+    mobileMenuButton.setAttribute('aria-controls', 'mobile-menu');
+
+    if (!document.querySelector('.menu-panel-backdrop')) {
+        menuBackdrop = document.createElement('div');
+        menuBackdrop.className = 'menu-panel-backdrop';
+        document.body.appendChild(menuBackdrop);
+    } else {
+        menuBackdrop = document.querySelector('.menu-panel-backdrop');
+    }
+
+    if (!mobileMenu.querySelector('.menu-panel-header')) {
+        const panelHeader = document.createElement('div');
+        panelHeader.className = 'menu-panel-header';
+        panelHeader.innerHTML = `
+            <div class="menu-panel-title">Menu</div>
+            <button type="button" class="menu-panel-close" aria-label="Close menu">
+                <span>Close</span>
+                <span class="menu-panel-close-x" aria-hidden="true">&times;</span>
+            </button>
+        `;
+        mobileMenu.prepend(panelHeader);
+        panelHeader.querySelector('.menu-panel-close')?.addEventListener('click', closeMenuPanel);
+    }
+
+});
 
 // Toggle 'About ABVSME' dropdown in mobile menu
 if (mobileAboutButton) {
     mobileAboutButton.addEventListener('click', () => {
         mobileAboutMenu.classList.toggle('hidden');
-        mobileAboutButton.querySelector('svg').classList.toggle('rotate-180');
+        mobileAboutButton.querySelector('svg')?.classList.toggle('rotate-180');
     });
 }
 
@@ -61,7 +147,7 @@ if (mobileAboutButton) {
 if (mobileProgramsButton) {
     mobileProgramsButton.addEventListener('click', () => {
         mobileProgramsMenu.classList.toggle('hidden');
-        mobileProgramsButton.querySelector('svg').classList.toggle('rotate-180');
+        mobileProgramsButton.querySelector('svg')?.classList.toggle('rotate-180');
     });
 }
 
@@ -70,7 +156,16 @@ if (mobileProgramsButton) {
 if (mobileFacultyButton) {
     mobileFacultyButton.addEventListener('click', () => {
         mobileFacultyMenu.classList.toggle('hidden');
-        mobileFacultyButton.querySelector('svg').classList.toggle('rotate-180');
+        mobileFacultyButton.querySelector('svg')?.classList.toggle('rotate-180');
+    });
+}
+
+
+// Toggle 'People' dropdown in mobile menu
+if (mobilePeopleButton) {
+    mobilePeopleButton.addEventListener('click', () => {
+        mobilePeopleMenu.classList.toggle('hidden');
+        mobilePeopleButton.querySelector('svg')?.classList.toggle('rotate-180');
     });
 }
 
@@ -79,7 +174,7 @@ if (mobileFacultyButton) {
 if (mobileStudentButton) {
     mobileStudentButton.addEventListener('click', () => {
         mobileStudentMenu.classList.toggle('hidden');
-        mobileStudentButton.querySelector('svg').classList.toggle('rotate-180');
+        mobileStudentButton.querySelector('svg')?.classList.toggle('rotate-180');
     });
 }
 
@@ -89,7 +184,7 @@ if (mobileLibraryButton) {
     mobileLibraryButton.addEventListener('click', (e) => {
         e.stopPropagation(); // Prevent parent dropdown from closing
         mobileLibraryMenu.classList.toggle('hidden');
-        mobileLibraryButton.querySelector('svg').classList.toggle('rotate-180');
+        mobileLibraryButton.querySelector('svg')?.classList.toggle('rotate-180');
     });
 }
 
@@ -99,7 +194,7 @@ if (mobileAdmissionButton) {
     mobileAdmissionButton.addEventListener('click', (e) => {
         e.stopPropagation(); // Prevent parent dropdown from closing
         mobileAdmissionMenu.classList.toggle('hidden');
-        mobileAdmissionButton.querySelector('svg').classList.toggle('rotate-180');
+        mobileAdmissionButton.querySelector('svg')?.classList.toggle('rotate-180');
     });
 }
 
@@ -108,7 +203,7 @@ if (mobileAdmissionButton) {
 if (mobileMoreButton) {
     mobileMoreButton.addEventListener('click', () => {
         mobileMoreMenu.classList.toggle('hidden');
-        mobileMoreMenu.querySelector('svg').classList.toggle('rotate-180');
+        mobileMoreButton.querySelector('svg')?.classList.toggle('rotate-180');
     });
 }
 
@@ -118,24 +213,18 @@ if (mobileMenu) {
     const mobileMenuLinks = mobileMenu.querySelectorAll('a');
     mobileMenuLinks.forEach(link => {
         link.addEventListener('click', () => {
-            mobileMenu.classList.add('hidden');
-            if (mobileMoreMenu) mobileMoreMenu.classList.add('hidden');
-            if (mobileMoreButton) mobileMoreButton.querySelector('svg').classList.remove('rotate-180');
-            if (mobileAboutMenu) mobileAboutMenu.classList.add('hidden');
-            if (mobileAboutButton) mobileAboutButton.querySelector('svg').classList.remove('rotate-180');
-            if (mobileProgramsMenu) mobileProgramsMenu.classList.add('hidden');
-            if (mobileProgramsButton) mobileProgramsButton.querySelector('svg').classList.remove('rotate-180');
-            if (mobileFacultyMenu) mobileFacultyMenu.classList.add('hidden');
-            if (mobileFacultyButton) mobileFacultyButton.querySelector('svg').classList.remove('rotate-180');
-            if (mobileStudentMenu) mobileStudentMenu.classList.add('hidden');
-            if (mobileStudentButton) mobileStudentButton.querySelector('svg').classList.remove('rotate-180');
-            if (mobileLibraryMenu) mobileLibraryMenu.classList.add('hidden');
-            if (mobileLibraryButton) mobileLibraryButton.querySelector('svg').classList.remove('rotate-180');
-            if (mobileAdmissionMenu) mobileAdmissionMenu.classList.add('hidden');
-            if (mobileAdmissionButton) mobileAdmissionButton.querySelector('svg').classList.remove('rotate-180');
+            closeAllMobileSubmenus();
+            closeMenuPanel();
         });
     });
 }
+
+document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && mobileMenu && !mobileMenu.classList.contains('hidden')) {
+        closeAllMobileSubmenus();
+        closeMenuPanel();
+    }
+});
 
 
 // Accessibility Features (Font Size and Contrast)
@@ -266,28 +355,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
-
-// Add this section to handle the click event for the People menu
-if (mobilePeopleButton) {
-    mobilePeopleButton.addEventListener('click', () => {
-        mobilePeopleMenu.classList.toggle('hidden');
-        mobilePeopleButton.querySelector('svg').classList.toggle('rotate-180');
-    });
-}
-
-// ...
-
-// Update the mobile menu close function to hide the new People menu as well
-if (mobileMenu) {
-    const mobileMenuLinks = mobileMenu.querySelectorAll('a');
-    mobileMenuLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            // ... (keep existing code)
-            if (mobilePeopleMenu) mobilePeopleMenu.classList.add('hidden');
-            if (mobilePeopleButton) mobilePeopleButton.querySelector('svg').classList.remove('rotate-180');
-        });
-    });
-}
 
 // Script for tab functionality        
 document.addEventListener('DOMContentLoaded', () => {
@@ -572,29 +639,6 @@ document.addEventListener('keydown', function (event) {
 
 
 // =====================================================================
-// Social Media Sidebar Hide/Show Logic
-// =====================================================================
-function hideSocialSidebar() {
-    const sidebar = document.getElementById('social-sidebar');
-    if (sidebar) {
-        sidebar.classList.add('hidden-mobile');
-        // Store user preference in localStorage
-        localStorage.setItem('socialSidebarHidden', 'true');
-    }
-}
-
-// Check if user previously hid the sidebar on page load
-document.addEventListener('DOMContentLoaded', () => {
-    const sidebar = document.getElementById('social-sidebar');
-    const wasHidden = localStorage.getItem('socialSidebarHidden');
-
-    // Only apply hidden state on mobile devices
-    if (sidebar && wasHidden === 'true' && window.innerWidth <= 768) {
-        sidebar.classList.add('hidden-mobile');
-    }
-});
-
-// =====================================================================
 // UI/UX Enhancements - Lazy Loading for Images
 // =====================================================================
 document.addEventListener('DOMContentLoaded', () => {
@@ -687,13 +731,10 @@ document.addEventListener('DOMContentLoaded', () => {
     if (btnContRed) btnContRed.addEventListener('click', () => changeContrast('red'));
     if (btnContGreen) btnContGreen.addEventListener('click', () => changeContrast('green'));
     if (btnContBlue) btnContBlue.addEventListener('click', () => changeContrast('blue'));
-
-    const btnCloseSocial = document.getElementById('btn-close-social');
-    if (btnCloseSocial) {
-        btnCloseSocial.addEventListener('click', hideSocialSidebar);
-    }
-
     if (typeof iFrameResize === 'function') {
         try { iFrameResize(); } catch (e) { console.error('Error resizing iframes:', e); }
     }
 });
+
+
+
